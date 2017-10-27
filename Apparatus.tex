@@ -1,0 +1,64 @@
+\chapter{Apparatus and Materials}\label{chaperApparatus}
+
+\section{General Setup}
+Figure \ref{fig:apparatus} shows the experimental apparatus used for this experiment. Participants were asked to sit on a wooden chair to which their shoulders were loosely tied. This was done to serve as a gentle reminder for them to keep their shoulders in the chair during the experiment. Otherwise, they had the full control of their head and arms. Participants reached with a tracked wooden stylus that was 26.5 cm long, 0.9 cm in diameter, and weighing 65 g. All users were asked to hold the stylus in their right hand in such a way that it extended approximately 3 cm above and 12 cm below their closed fist. Each trial began with the back end of the stylus inserted in a 0.5 cm groove on top of the launch platform, which was located next to the participant's right hip.
+
+The target consisted of a groove that was 0.5 cm deep, 8.0 cm tall, and 1.2 cm wide. The groove extended from the center of the base of a 8.0 cm wide and 16 cm tall white rectangle. The target was enclosed within a 0.5 cm border made from thick, black tape. This was added to help participants to distinguish the target from the white background wall. Participants were required to match the stylus tip to the groove of the target during the experiment.
+
+The target was placed at participants' eye level and midway between the participants' eyes and right shoulder in order to keep the distance from the eye to the target as close as possible to the distance from the shoulder to the target. The position of the target was adjusted by the experimenter using a 200 cm wooden optical rail. The rail extended in depth along the floor and was parallel to the participants' viewing direction. The target was attached to the optical rail via an adjustable, hinged stand. To prevent any interference with the electromagnetic tracking system, the target, stand, stylus and optical rail were made of wood.
+
+\begin{figure}[th!]
+	\centering
+	\includegraphics[trim={0 350 0 0}, width=5in]{Study1-ACMSAP2014/images/ApparatusD}
+	\caption{Shows the near-field distance estimation apparatus. The target, participant's head, and stylus are tracked in order to record actual and perceived distances of physical reach in the IVE.}
+	\label{fig:apparatus}
+	
+\end{figure}
+
+\section{Visual aspects}
+
+An NVIS nVisor SX111 HMD weighing about 1.8 kg was used for the experiment. The HMD contains two LCOS displays each with a resolution of 1280 x 1024 pixels for viewing a stereoscopic virtual environment. The field of view of the HMD was determined to be 102 degrees horizontal and 64 degrees vertical. The field of view was determined by rendering a carefully registered virtual model of a physical object (similar to ~\cite{NAB+11}). The simulation used here consisted of the virtual model of the training room, experimental room and apparatus created using Blender. The virtual replica of the apparatus included target, stand, chair, tracking system, and stylus. A static virtual body seated on the chair was also presented to provide an egocentric representation of self whether the participant looked down [Figure \ref{fig:virtualBody}].
+%, which are described in detail in our previous work (See Napieralski et al. [2011]~\nocite{NAB+11} and Altenhoff et al. [2012]~\nocite{ANL+12}). We extended this experimental simulation to provide the following visual feedback.
+
+\begin{figure}[th!]
+	\centering
+	\includegraphics[trim={50 530 0 50}, width=6.5in]{newImagesPDF/virtualBody}
+	\caption{The left image shows a screenshot of the training environment from the participant’s first person perspective with HMD. The right image shows a screenshot of the avatar as seen from the participant’s perspective.}
+	\label{fig:virtualBody}
+	
+\end{figure}
+
+In those conditions that we did not provide haptic feedback, we designed our simulation so that the stylus' tip would turn red when it was within a 1 cm radius of target's groove. Figure \ref{fig:Target_Stylus} shows three screen shots of the virtual target and stylus. Based on the visual information provided to participants, they visually detected when the stylus intersected a groove in the target's face in the IVE.
+
+\begin{figure}[th!]
+	\centering
+	\includegraphics[trim={50 580 0 50}, width=7in]{Study1-ACMSAP2014/images/TargetStylusH}
+	\caption{Image on the left shows a screen shot of the virtual target as perceived by participants in the IVE with the stylus in front of the target. Image on the middle shows that the tip of the stylus turned red when it was placed in the groove of the target, and on the right shows stylus passed the target. Participants received visual and proprioceptive feedback only when interacting with the target during closed-loop trials.}
+	\label{fig:Target_Stylus}
+	
+\end{figure}
+
+\section{Procedure}
+Upon arrival, all participants completed a standard informed consent form and demographic survey. Participants were provided with documentation describing the experimental procedures after which their informed consent was acquired. All participants were tested for visual acuity of 20/40 or better using the Titmus Fly Stereotest when viewing an image with a disparity of 400 sec of arc. The interpupillary distance (IPD) was then measured using the mirror-based method described by Willemsen et al.~\cite{WGT+08}. Later, the measured IPD was used as a parameter for the experiment simulation to set the graphical inter-ocular distance, and the HMD was adjusted accordingly for each participant. Participants were instructed to sit straight up in a chair in a comfortable position. Participants' shoulders were then loosely strapped to the back of the chair to serve as a gentle reminder for them to keep their shoulders back in the chair during the experiment. Before measuring the participant's maximum arm reach, the physical target height was set to the participant's eye level. The participant's maximum arm reach was measured by adjusting the physical target so that the participant could place the stylus in the groove of the target with their arm fully extended. However, this was performed without using the extension of their shoulder~\cite{ANL+12}. The maximum arm length was then used to generate target distances to be set during the experiment. Participants were instructed on how to make their physical reach judgments before putting on the HMD. They were asked to start each trial with the stylus in the dock next to their hip and reach to the virtual target with a fast, ballistic motion to where they believe the virtual target had been, and then adjust their initial reach by moving back and forth. 
+
+All participants started the experiment by viewing a training environment in IVE that was designed to help the participants acclimate to the viewing experience. Next, the participants were presented with a photorealistic virtual representation of the real room within which the experiment took place. The virtual room also included an accurate replica of the experimental apparatus. During testing, the participants performed 2 practice trials followed by 30 trials of blind reaching in the baseline or pretest session. Trials consisted of 5 random permutations of 6 target distances corresponding to 50, 58, 67, 75, 82, and 90 percent of participant's maximum arm length. For each trial, with the HMD display turned off, the target distance was adjusted using the physical target to which the sensor in attached. Then, vision was restored and virtual target was displayed. Once participants notified the experimenter that they were ready, the vision in the HMD was turned off via a key press to eliminate visual feedback in pretest and posttest sessions and stayed on in calibration session. In the open-loop blind reaching (pretest and posttest sessions), the physical target was then immediately retracted to prevent any collision between the participants' stylus and target. The tracked position of the stylus (hand), target, and head was logged over the duration of the experiment.
+
+To reduce auditory cues to the target's position during preparation for the next trial, white noise was played in the participant's headphones. The initiation of the white noise was also used as a signal for the participants to return their hand to the stylus dock in preparation for the next trial. The next trial distance was then adjusted with the HMD display turned off in IVE conditions or participants were asked to close their eyes in RW conditions. 
+
+\section{Tracking of Physical Reach}
+A 6 degree of freedom Polhemus Liberty electromagnetic tracking system was used to track the position, and orientation of the participant’s head, stylus, and target in both the IVE and RW conditions. Due to electromagnetic tracking systems sensitivity to metallic objects in physical environment, the tracking system was calibrated to minimize the interference, which are described in detail in our previous works (See Napieralski et al. ~\cite{NAB+11} and Altenhoff et al. ~\cite{ANL+12}). The calibration step insured the tracking system was accurate to 0.1 cm and 0.15 degree. Raw position and orientation values of the tracked sensors were logged in a text file in both the IVE and RW conditions for each participant. This data was later used to analyze the results of the experiment.
+
+%To ensure proper registration of the virtual target and stylus with their real counterparts, we carefully aligned the virtual object’s coordinate system with that of the tracking sensor’s coordinate system. We also determined the relationship between the coordinate system of the tracking sensor on the participant’s head (on top of the HMD) and the coordinate system of the HMD’s display screen (computer graphics view plane), to ensure proper registration of the virtual environment to the physical environment as perceived by the participant.
+
+\section{Data Preprocessing}\label{dataPreprocessing}
+
+Rapid reaches to targets were characterized by a fast ballistic phase and then a much smaller and slower corrective phase. Past work has shown that the most accurate way to measure near field perceptual-motor target depth judgments is via rapid reaches and to use the end point of fast ballistic phase \cite{BP98}. We extracted the end of the ballistic reach by analyzing the XY position trajectories and speed profile associated with the physical reach motions. To do so, the end of the forward trajectory (motion toward the target) was tagged as a baseline for the end of the ballistic reach. Then, all the tagged data points from XY trajectories were embedded in the speed profile to be used to pick the end of the ballistic reaches. Figure \ref{fig:dataPreprocessing}-Left is an example of an XY trajectory. The blue line represents the forward motion (reach phase) and the red line represents the backward motions (retraction phase) of the stylus, as the participant reached to make a perceptual judgment. The black square is the tagged data point denoting the end of the ballistic reach. The speed (XYZ) and the velocity in all 3 dimensions (X, Y and Z) of the tracked stylus for each trial were also plotted in a separate window. The speed profile was rendered as a blue line. Figure \ref{fig:dataPreprocessing}-Right shows a full view of the speed and velocity profiles for a single trial. The time instance at the end of the ballistic reach, extracted from the previous step, was also denoted in these plots as a magenta line. This line provided an estimate based on the XY trajectory graph as to the location of the end of the ballistic reach, and was then visually confirmed by examining the speed and velocity profiles generated in this step. The end of the ballistic reach was chosen by the experimenter examining the speed profile as the first time instance when the speed reaches a local minima below a threshold of 20 cm/s, immediately after attaining peak speed caused by the forward motion of the stylus. After tagging the speed profile, the data from all the other sensors were automatically extracted based on the temporal information gathered from the previous step in coding the end of the ballistic reach.
+
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[trim = 10mm 5mm 5mm 0mm, width=5.8in]{Study3-ACMTAP2016/Images-PDF-format/dataPreprocessing}
+	\caption{\textbf{Left}: An example of XY trajectory for a single trial. The black square is the tagged data point denoting the end of the ballistic reach. \textbf{Right}: An example of speed and velocity profiles (solid blue line). The magenta line denotes the time instance at the end of the ballistic reach which was initially extracted from XY trajectory.}
+	\label{fig:dataPreprocessing}
+\end{figure}
+

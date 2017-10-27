@@ -1,0 +1,342 @@
+
+\chapter{Initial Study 2}
+We examine a set of motion related variables to evaluate spatial interaction such as error in reached versus actual target distance, time to complete the task, distance traveled by the hand in all 3 dimensions, distance between paths (using the Dynamic Time Warping (DTW) techniques) \cite{kr05}, as well as velocity of physical reach motion in all 3 dimensions. In this manner, we performed an initial systematic comparison to characterize human physical reach behaviors in the virtual and real world, which could enable us to better understand the discrepancy in task performance between the two \cite{NAB+11}. We also examine the relative impact of visual and haptic information on reaching behaviors in these real and virtual environments. 
+
+\section{Research Questions}
+We asked the following research questions in this empirical evaluation:
+
+1) How do the perceptual differences between virtual and real world affect properties of physical reach motions in the near field?
+
+2) How do the motor responses of participants differ between situations involving the presence or absence of visuo-haptic feedback?
+
+3) How does haptic feedback alone affect human physical reach motion, as compared to vision only and visuo-haptic feedback, in near field distances in IVEs?
+
+4) Is there any difference between the physical reach paths (in terms of distance between the paths) in virtual and real environments as well as in the presence or absence of the visuo-haptic feedback?
+
+
+\section{Experiment Methodology and Procedure}
+63 participants (45 female, 18 male) recruited from a university student population and received course credit for their participation. All participants were right handed.
+
+\subsection{Apparatus and Materials} \label{generalSetup}
+%\subsubsection{General Setup} \label{generalSetup}
+Figure \ref{fig:apparatus} depicts the experiment apparatus used for this research. The moving components of the apparatus were the target and participant's head and hand which were tracked in 6 Degrees of Freedom (\textit{DoF}) (position and orientation) using a Polhemus Liberty electromagnetic tracking system. Participants were asked to sit with their backs straight on a chair, to which their shoulders were loosely tied to. This was done to serve as a gentle reminder for them to keep their shoulders in the chair during the physical reaches in the experiment, otherwise they had full control over their head and arm movements. The participant's arm length, inter-occular distance and eye height were measured before the experiment was initiated. Then, the target was adjusted to participants' eye level and midway between the participants' eyes and right shoulder in order to keep the distance from \textit{the eye to the target} the same as the distance from \textit{the right shoulder to the target} during the experiment. Next, all users were asked to hold a tracked stylus in their right hand. Participants then reached to a virtual or physical target with the tracked stylus and were required to position the stylus tip in the groove of the virtual or physical target during the experiment. Each trial began with the stylus positioned back on top of a launch platform beside the participant's right hip. Similarly, participant's head was tracked in 6 DoF in the real and virtual world to be used in the experiment simulation and also for post-experiment data processing. All the visual components of the apparatus were carefully registered to be accurately co-located with the surface of the corresponding physical components. Thus, the visual geometry of the various components were exactly registered to their physical real world counterparts. 
+
+In the IVE or virtual world conditions, participants wore a NVIS nVisor SX111 HMD describe in Section \ref{VisualAspect}. The simulation was designed so that in the absence of haptic feedback during physical reaching, the tip of the stylus would appear red when it was within a 1 cm radius of target's groove in the immersive virtual environment (IVE) (Figure \ref{fig:Target_Stylus}). Therefore when participants had visual feedback only, they could perceive when the stylus tip intersected the groove in the target face in the IVE. The virtual target, stylus and apparatus in the virtual world were an exact and carefully registered replica of the physical apparatus. Therefore, in the virtual world condition with haptic feedback, when the participant reached to place the stylus in the groove of the target face they could obtain accurate visual and haptic feedback of contact between the stylus and the target of the apparatus. 
+
+\subsection{Experiment Design} \label{ExDesign}
+The experiment was conducted during an interaction session with or without visual and/or haptic feedback. A between-subjects design was utilized, where participants were randomly assigned to one of the five conditions detailed below. Participants performed 2 practice trials followed by 30 experiment trials. Trials consisted of 5 random permutations of 6 target distances corresponding to 50, 58, 67, 75, 82, and 90 percent of the participants' maximum arm length. The five conditions were as follows:
+
+
+\textbf{Real-V\&H:} \textit{Real environment with visuo-haptic feedback.}  In this condition, participants in the real world reached to a physical target with a fast, ballistic motion, with their eyes open in a closed loop fashion, and then gradually adjusted their initial reach successfully to place the stylus into the target's groove. 
+
+\textbf{Real-NV\&NH:} \textit{Real environment with no visuo-haptic feedback.} In this condition, participants in the real world viewed a target at a given distance and then performed a blind reach in an open loop fashion to the perceived location of the physical target with a fast, ballistic motion. The participants closed their eyes and the target was removed just prior to reach initiation.
+
+\textbf{Virtual-V\&H:} \textit{Virtual environment with visuo-haptic feedback.} This condition was similar to the Real-V\&H condition, except that while the participants made physical reaches in the real world, here they viewed a virtual simulation of that world (including the room, apparatus, target and stylus). 
+
+\textbf{Virtual-V\&NH:} \textit{Virtual environment with visual and no haptic feedback.} This condition was similar to the Virtual-V\&H condition, but with haptic feedback removed by the removal of the physical target just prior to reach initiation.  The virtual target remained in view. In order to provide visual feedback to successfully guide the completion of the reach, the simulation was designed so that the stylus's tip would turn red when it was within a 1 cm radius of target's groove.
+% (and this was also the case in Virtual-V\&H).	
+
+\textbf{Virtual-NV\&NH:} \textit{Virtual environment with no visuo-haptic feedback.} This condition was similar to the Real-NV\&NH condition, except they viewed the virtual simulation. The display made blank just prior to reach initiation, so that the physical reaches were made in an open loop manner without visuo-haptic feedback in the IVE.	
+
+\subsection{Data Preprocessing}
+The procedure and data preprocessing were describe in details in Section \ref{dataPreprocessing}. The total duration of the experiment was on average 15 minutes for all conditions. 
+
+Before conducting our analysis, we performed a correlation matrix between all the independent variables to reduce the dimensionality of the analysis. We found that some of the independent variables were highly correlated to each other. Due to the page limit, we have excluded the results of some these independent variables. For instance, the results from the velocity in either of the X, Y or Z dimensions were replaced by the speed of the physical reach task in 3D space. Similarly, the results for the maximum velocity was excluded in this report due to its high correlation with average velocity. We report the results of the analysis from the least correlated variables associated with the physical reach behaviors. For instance, we analyzed average and maximum velocity but pattern of the results were identical to the average velocity. Based on the results of the study, average velocity is strongly correlated to maximum velocity $r=.943, n= 1459, p$\textless$.001$. A similar pattern was observed between average and maximum acceleration, $r=.942, n= 1459, p$\textless$.001$. Therefore, we decided to proceed with only the average velocity and average acceleration, while excluding maximum velocity and maximum acceleration from the results section. 
+
+\section{Results}
+Out of 63 participants, 62 were considered for data analysis (one participant's data was excluded due to technical difficulties). The participants were distributed as in 13 in Real-V\&H, 14 in Virtual-V\&H, 10 in Real-NV\&NH, 12 in Virtual-NV\&NH, and 13 in Virtual-V\&NH conditions. We performed a three-step analysis: \textbf{First}, we examined the effects of the presence of visuo-haptic feedback in real and virtual worlds via a $2\times2$ factorial independent group design [(Feedback - visuo-haptic feedback vs no visuo-haptic feedback) $\times$ (Environment - Real vs Virtual)] utilizing four of five different conditions in the experiment (Table \ref{step1}). We analyzed the data using a $2\times2$ ANOVA on the different performance dimension of the physical reach motion such as accuracy of the estimated reach (Equation \ref{Errformula}), average velocity, and time to complete the reach. This was followed by post-hoc test to examine main and interaction effects. \textbf{Second}, we examined the impact of vision and haptic feedback in the IVE. We compared the physical reach motion characteristics of the three virtual world conditions (Virtual-V\&H, Virtual-V\&NH, and Virtual-NV\&NH). Thus, we conducted a one-way independent sample ANOVA on the various performance dimension of the physical reach motion data in IVE (Table \ref{1way}). \textbf{Third}, we used dynamic time warping to examine the difference between the paths in different experiment conditions.
+
+\begin{equation} \label{Errformula}
+Error (\%) = \dfrac {Estimated Distance - Actual Distance}{Actual Distance} * 100
+\end{equation}
+
+\begin{table}[]
+	\centering
+	\caption{Step 1 - $2\times2$ Factorial Design Between Environment and Feedback}
+	\label{step1}
+	\begin{tabular}{ccccl}
+		\cline{2-3}
+		\multicolumn{1}{c|}{\textbf{}}             & \multicolumn{2}{c|}{\textbf{Feedback}}                                                                                                                                                             &           &  \\ \cline{1-3}
+		\multicolumn{1}{|c|}{\textbf{Environment}} & \multicolumn{1}{c|}{\textit{\begin{tabular}[c]{@{}c@{}}Visuo-Haptic\\ Feedback\end{tabular}}} & \multicolumn{1}{c|}{\textit{\begin{tabular}[c]{@{}c@{}}No Visuo-Haptic\\ Feedback\end{tabular}}} & \textit{} &  \\ \cline{1-3}
+		\multicolumn{1}{|c|}{\textit{Real}}        & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}n=13\\ (Real-V\&H)\end{tabular}}                & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}n=10\\ (Real-NV\&NH)\end{tabular}}                 &           &  \\ \cline{1-3}
+		\multicolumn{1}{|c|}{\textit{Virtual}}     & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}n=14\\ (Virtual-V\&H)\end{tabular}}             & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}n=12\\ (Virtual-NV\&NH)\end{tabular}}              &           &  \\ \cline{1-3}
+		&                                                                                                &                                                                                                   &           & 
+	\end{tabular}
+\end{table}
+
+\begin{table}[]
+	\centering
+	\caption{Step2 - Effect of Feedback in Virtual Environment}
+	\label{1way}
+	\begin{tabular}{ccccl}
+		\cline{2-4}
+		\multicolumn{1}{c|}{\textbf{}}             & \multicolumn{3}{c|}{\textbf{Feedback}}                                                                                                                                                                                                                                                  &  \\ \cline{2-4}
+		\multicolumn{1}{c|}{\textbf{}}             & \multicolumn{2}{c|}{\textit{Visually Guided}}                                                                                                                                            & \multicolumn{1}{c|}{\textit{Non-Visually Guided}}                                            &  \\ \cline{1-4}
+		\multicolumn{1}{|c|}{\textbf{Environment}} & \multicolumn{1}{c|}{\textit{\begin{tabular}[c]{@{}c@{}}Haptic \\ Feedback\end{tabular}}} & \multicolumn{1}{c|}{\textit{\begin{tabular}[c]{@{}c@{}}No Haptic \\ Feedback\end{tabular}}} & \multicolumn{1}{c|}{\textit{\begin{tabular}[c]{@{}c@{}}No Haptic \\ Feedback\end{tabular}}} &  \\ \cline{1-4}
+		\multicolumn{1}{|c|}{\textit{Virtual}}     & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}n=14\\ (V\&H)\end{tabular}}                & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}n=13\\ (V\&NH)\end{tabular}}                  & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}n=12\\ (NV\&NH)\end{tabular}}                 &  \\ \cline{1-4}
+		&                                                                                           &                                                                                              &                                                                                              & 
+	\end{tabular}
+\end{table}
+
+\subsection{Effects of the Presence of Visuo-haptic Feedback in Real and Virtual Worlds} \label{part1}
+\subsubsection {Accuracy of the Estimated Reach (aka Error(\%))} \label{accuracy2way}
+First, a $2\times2$ factorial ANOVA was used to test the effects of the feedback (presence or absence of visuo-haptic feedback) and environment (real vs virtual) on the accuracy of the reaches (Figure \ref{fig:error2way}). The results indicate that a significant main effect of the environment, $F(1,1455)=113.29$, $p$\textless$.001$, $\eta^{2}=.07$. As expected, participants distance estimation in real condition was more accurate ($M=4.35, SD=12.28$) compared to the participants distance estimation in the virtual condition ($M=11.85, SD=19.29$) in reaching towards the perceived location of the target. We also found a significant main effect for the feedback, $F(1,1455)=474.12$, $p$\textless$.001$, $\eta^{2}=.25$. The mean error revealed that the participants in the visuo-haptic feedback condition were highly accurate on estimating distance to the target ($M=0.98, SD=7.28$) as compared to the no visuo-haptic feedback ($M=17.79, SD=20.48$), which was expected due to the continuous closed loop visual feedback in the former condition. There was also a significant interaction between feedback and environment, $F(1,1455)=128.01$, $p$\textless$.05$, $\eta^{2}=.08$. Post hoc analysis indicated that participants in no visuo-haptic feedback made significantly more accurate depth judgments when in real environment ($M=8.80, SD=17.20$) as compared to participants in the IVE ($M=24.70, SD=20.13$), $p$\textless$.001$. However, participants with visuo-haptic feedback condition made similar distance judgments when in the virtual ($M=.74, SD=8.82$) and in the real ($M=1.23, SD=5.03$). Similarly, participants in virtual condition made significantly better depth judgments when in visuo-haptic feedback as compared to no visuo-haptic feedback condition, $p$\textless$.001$. Moreover, participants in real condition made significantly better depth judgments when in visuo-haptic feedback as compared to those in condition with no visuo-haptic feedback, $p$\textless$.001$. These results indicate that reaches become inaccurate when visuo-haptic feedback is removed, with this effect being much greater in the virtual condition than with real world viewing. When visuo-haptic feedback is present, the virtual condition is as accurate as viewing in the real world.
+
+\begin{figure}
+	\centering
+	\includegraphics[trim = 0mm 0mm 0mm 10mm, width=6in]{Study3-ACMTAP2016/Images-PDF-format/error2wayInteraction}
+	\caption{\% Error for ``Real vs Virtual Environment" and ``Visuo-haptic Feedback (V\&H) vs No Visuo-haptic Feedback (NV\&NH)"}
+	\label{fig:error2way}
+\end{figure}
+
+\subsubsection{Time to Complete the Reach ($s$)} \label{time2way}
+Results regarding the ``time to complete the reach" revealed a significant main effect for the two independent variables: environment, $F(1,1455)=18.72$, $p$\textless$.05$, $\eta^{2}=.01$, and feedback, $F(1,1455)=208.62$, $p$\textless$.001$, $\eta^{2}=.13$ (Figure \ref{fig:time2way}). There was also a significant interaction between environment and feedback, $F(1,1455)=38.17$, $p$\textless$.001$, $\eta^{2}=.03$. Post hoc analysis indicated that participants in the no visuo-haptic feedback condition spend significantly less time to complete the reach when in real environment ($M=.85, SD=.17$) as compared to those in virtual environment ($M=1.00, SD=.36$), $p$\textless$.001$. However, participants in visuo-haptic feedback condition spent about same amount of time to complete the reaches in virtual environment ($M=.71, SD=.19$) and in the real world ($M=.74, SD=.29$). Similarly, participants in the real world spent significantly less time to complete the reach when receiving visuo-haptic feedback as compared to those that did not, $p$\textless$.001$. Moreover, participants in virtual environment spent significantly less time to complete the reaches when receiving visuo-haptic feedback than those that did not, $p$\textless$.001$. Overall, participants in real condition took less time to complete the reach task ($M=.78, SD=.25$) as compared to the virtual condition ($M=.84, SD=.32$). One interesting finding was that participants in the virtual condition seemed to move their arm slower than those in the real world, which could be due to the levels of uncertainty in the virtual world as compared to the real world. Similarly, participants completed their reaches faster when they had visuo-haptic feedback ($M=.72, SD=.24$) as compared to the no feedback condition ($M=.94, SD=.30$). In sum, the reaching time measure mirrored the error measure discussed previously; reaches become slower when visuo-haptic feedback is removed, with this effect being much greater in the virtual world than in real world viewing. When visuo-haptic feedback was present, the virtual and real world times were similar. When comparing the time and error measures, it is important to note that, in general, conditions with the slower reaches were less accurate, while more rapid ballistic reaching seemed to be more accurate. 
+
+
+\begin{figure}
+	\centering
+	\includegraphics[trim = 0mm 0mm 0mm 5mm, width=6in]{Study3-ACMTAP2016/Images-PDF-format/time2wayInteraction}
+	\caption{Time ($s$) to complete the task for ``Real vs Virtual Environment" and ``Visuo-haptic Feedback (V\&H) vs No Visuo-haptic Feedback (NV\&NH)"}
+	\label{fig:time2way}
+\end{figure}
+
+\subsubsection{Distance Traveled ($cm$)} \label{dist2way}
+Distance traveled is the path line or arc taken to reach the target. It is calculated as the cumulative distances ($\sum_{i=1}^{N-1}\Delta D_i$). Distance traveled is always equal to or longer than the target distance that participants eventually reached to because the target distance is unidimensional (extending horizontally away from the participant), while the Distance Traveled occurs in 3D-space. The Distance Traveled takes into account the differing heights between the start of the hand's path and the target. More importantly, it also takes into account any curvature to the hand's path. Hence, it is possible to reach to a same destination when taking two different arcs in terms of the length and the shape of the arc. To better understand the differences between the shapes of the arcs we used Dynamic Time Warping (DTW) which will be explained in Section \ref{DTW}. Equation (\ref{distance1}) was used to calculate the displacement at each timestamp ($\Delta D_i$). This one step displacement was then used to calculate the total length of the arc ($D$ from Equation (\ref{distance2})). 
+
+\begin{equation} \label{distance1}
+\Delta D_i = \sqrt{x_i^2+y_i^2+z_i^2},  where  
+\begin{cases}
+\Delta x_i = x_{i+1}-x_{i} \\
+\Delta y_i = y_{i+1}-y_{i} \\
+\Delta z_i = z_{i+1}-z_{i} 
+\end{cases}
+\end{equation}
+
+
+\begin{equation} \label{distance2}
+D = \sum_{i=1}^{N-1}\Delta D_i 
+\end{equation}
+
+
+Results based on the ``distance traveled" in the ballistic phase of the reaching motion towards the target revealed no main effect of the environment but a significant main effect of the feedback $F(1,1455)=1272.69$, $p$\textless$.001$, $\eta^{2}=.47$, and a significant interaction, $F(1,1455)=68$, $p$\textless$.001$, $\eta^{2}=.05$ (Figure \ref{fig:distance2way}). Post hoc analysis indicated that participants in the no visuo-haptic feedback condition reached significantly farther when in the real environment ($M=84.73, SD=9.19$) as compared to participants in the virtual environment ($M=76.80, SD=21.13$), $p$\textless$.001$. Similarly, participants in the virtual environment reached significantly farther when in the absence of visuo-haptic feedback as compared to participants that received visuo-haptic feedback, $p$\textless$.001$. Combined with the results from Section \ref{accuracy2way}, participants underestimated distance in virtual condition in the no feedback condition. However, participants in visuo-haptic feedback condition reached with shorter distances traveled when in real environment ($M=35.87, SD=30.57$) as compared to the virtual counterpart ($M=46.28, SD=14.31$). Similarly, combined with the results from Section \ref{accuracy2way}, participants overestimated distance in virtual condition in visuo-haptic feedback condition. Overall, participants in virtual environment reached slightly farther ($M=60.43, SD=23.42$) as compared to the real condition ($M=56.03, SD=34.09$). Likewise, participants reached farther in the no visuo-haptic feedback condition ($M=80.24, SD=17.44$) as compared to the visuo-haptic feedback condition ($M=41.22, SD=24.20$). These results suggest that the reaching path become longer when visuo-haptic feedback is removed; this effect is greater in the real condition than in the virtual world. However, when visuo-haptic feedback was present, the path lines were longer in the virtual world as compared to the real world viewing. Thus the reaches were less efficient in the virtual world, even though the final accuracy of the reaches was the similar in both conditions in the presence of closed loop visuo-haptic feedback (Section \ref{accuracy2way}). This inefficiency may have been caused by a lack of visual information regarding the configuration of the hand relative to the target and the remainder of the body. Future research will be directed at the possibility that adding a self-avatar to the virtual view may improve manual reach performance.
+
+
+\begin{figure}
+	\centering
+	\includegraphics[trim = 0mm 0mm 0mm 5mm, width=5.8in]{Study3-ACMTAP2016/Images-PDF-format/distance2wayInteraction}
+	\caption{Distance traveled ($cm$) to complete the task for ``Real vs Virtual Environment" and ``Visuo-haptic Feedback (V\&H) vs No Visuo-haptic Feedback (NV\&NH)"}
+	\label{fig:distance2way}
+\end{figure}
+
+\subsubsection{Average Velocity ($cm/s$)}
+The average velocity was calculated using the equation (\ref{AvgVel}) in which the instantaneous velocity was generated using the $\Delta D$ and $\Delta t$ (time) vector (equation \ref{velocityF}).
+
+\begin{equation} \label{velocityF}
+\Delta V_i = \frac{\Delta D_i}{\Delta t_i}, where
+\begin{cases}
+\Delta t_i = t_{i+1}-t_{i}
+\end{cases}
+\end{equation}
+
+\begin{equation} \label{AvgVel}
+V = \frac{1}{N}\sum_{i=1}^{N-1}\Delta V_i 
+\end{equation}
+
+\begin{figure}
+	\centering
+	\includegraphics[trim = 10mm 0mm 0mm 5mm, width=6in]{Study3-ACMTAP2016/Images-PDF-format/avgSpeed2wayInteraction}
+	\caption{Average velocity ($cm/s$) during the physical reach task for ``Real vs Virtual Environment" and ``Visuo-haptic Feedback (V\&H) vs No Visuo-haptic Feedback (NV\&NH)"}
+	\label{fig:avgVel2way}
+\end{figure}
+
+The average velocity results revealed no main effect of the environment. However, there was a significant main effect of feedback for the average velocity, $F(1,1455)=1358.21$, $p$\textless$.001$, $\eta^{2}=.48$. The mean differences revealed that the participants in the visuo-haptic feedback condition had a lower average velocity towards the target ($M=43.16, SD=25.46$) as compared to the no visuo-haptic feedback condition ($M=89.72, SD=25.67$). This finding supports the notion that participants with visual feedback performed distance estimation with higher accuracy (\ref{accuracy2way}) as compared to those in no visuo-feedback feedback condition. We also found a significant interaction between environment and feedback, $F(1,1455)=131.10$, $p$\textless$.001$, $\eta^{2}=.08$ (Figure \ref{fig:avgVel2way}). Post hoc analysis indicated that participants in the no visuo-haptic feedback condition reached towards the target faster when in the real environment ($M=99.33, SD=19.80$) as compared to participants in the virtual environment ($M=82.34, SD=27.21$), $p$\textless$.001$. Similarly, participants in the visuo-haptic feedback condition reached towards the target slower when in the real environment ($M=36.61, SD=30.27$) as compared to participants in the virtual environment ($M=49.35, SD=17.83$), $p$\textless$.001$. 
+
+\subsubsection{Average Acceleration ($cm/s^2$)}
+Similarly, the average Acceleration was calculated using the equation (\ref{AvgAcc}) in which the instantaneous acceleration was generated using the $\Delta V$ and $\Delta t$ (time) vector (equation \ref{AccF}).
+
+
+\begin{equation} \label{AccF}
+\Delta A_i = \frac{\Delta V_i}{\Delta t_i}, where
+\begin{cases}
+\Delta t_i = t_{i+1}-t_{i}
+\end{cases}
+\end{equation}
+
+\begin{equation} \label{AvgAcc}
+A = \frac{1}{N}\sum_{i=1}^{N-1}\Delta A_i 
+\end{equation}
+
+Similarly, the average acceleration results revealed no main effect of the environment. However, there was a significant main effect of feedback for the average acceleration, $F(1,1455)=1389$, $p$\textless$.001$, $\eta^{2}=.49$. The mean differences revealed that the participants in the visuo-haptic feedback condition had a significantly lower average acceleration towards the target ($M=649.15, SD=383.14$) as compared to the no visuo-haptic feedback condition ($M=1360.51, SD=389.35$). We also found a significant interaction between environment and feedback, $F(1,1455)=130.70$, $p$\textless$.001$, $\eta^{2}=.08$ (Figure \ref{fig:avgAcc2way}). Post hoc analysis indicated that participants in the no visuo-haptic feedback condition reached towards the target faster when in the real environment ($M=1506.14, SD=300.54$) as compared to participants in the virtual environment ($M=1248.58, SD=412.50$). Similarly, participants in the visuo-haptic feedback condition reached towards the target slower when in the real environment ($M=551.10, SD=455.43$) as compared to participants in the virtual environment ($M=741.83, SD=268.57$). 
+
+
+\begin{figure}
+	\centering
+	\includegraphics[trim = 0mm 0mm 0mm 5mm, width=6.2in]{Study3-ACMTAP2016/Images-PDF-format/Acc2wayInteraction}
+	\caption{Average acceleration ($cm/s^{2}$) during the physical reach task for ``Real vs Virtual Environment" and ``Visuo-haptic Feedback (V\&H) vs No Visuo-haptic Feedback (NV\&NH)"}
+	\label{fig:avgAcc2way}
+\end{figure}
+
+
+\subsubsection{Discussion}  
+Human depth judgments to near field distances in real environments have been shown to be accurate \cite{NAB+11}. On the contrary, in the virtual world, the distances are usually misjudged \cite{EAH+14}. We compared the presence and absence of visuo-haptic feedback on various properties of physical reaches in the real world and in IVE. The results suggest that physical reach responses vary systematically between real and virtual environments and in situations with and without visuo-haptic feedback. Generally, participants were more accurate in the real world than in the virtual world, and also were both more accurate and more efficient when presented with sensory feedback than with no feedback. More importantly, the results indicate that the participants performed similarly in the virtual and real environments, which emphasizes the importance of providing visuo-haptic feedback to the users of VR applications.
+
+Additionally, participants reached towards the target with a slower trajectory in the real world condition than in the IVE condition and also in the presence of visuo-haptic feedback than in the absence of visuo-haptic feedback. Possibly because real environment and visuo-haptic feedback seemed more natural to users, and the accuracy of depth judgments was enhanced because the slower trajectory allowed then time to guide their performance based on the sensory feedback. Summary of the results from Section \ref{part1} are presented in Table \ref{SumPart1}. 
+
+
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+
+\begin{table}[]
+	\centering
+	\vspace*{-5pt}
+	\caption{Summary of $2\times2$ Factorial Design Between Environment and Feedback}
+	\label{SumPart1}
+	\begin{tabular}{|l|l|c|c|c|l|l|l|}
+		\hline
+		\multicolumn{1}{|c|}{\textbf{Variable (n=49)}}       & \multicolumn{1}{c|}{\textbf{}}                 & \textbf{$\textbf{F}$ value}                             & \textit{\textbf{$\textbf{p}$}}                                 & \textit{\textbf{$\eta^{2}$}}                       &                  & \textbf{Mean} & \textbf{SD} \\ \hline
+		\multirow{5}{*}{\textit{\textbf{Accuracy}}}          & \multirow{2}{*}{\textit{\textbf{Environment}}} & \multirow{2}{*}{113.29}                      & \multirow{2}{*}{\textless.001}                      & \multirow{2}{*}{0.07}                      & \textit{Real}    & 4.35          & 12.28       \\ \cline{6-8} 
+		&                                                &                                              &                                                     &                                            & \textit{Virtual} & 11.85         & 19.29       \\ \cline{2-8} 
+		& \multirow{2}{*}{\textit{\textbf{Feedback}}}    & \multirow{2}{*}{474.12}                      & \multirow{2}{*}{\textless.001}                      & \multirow{2}{*}{0.25}                      & \textit{V\&T}    & 0.98          & 7.28        \\ \cline{6-8} 
+		&                                                &                                              &                                                     &                                            & \textit{NV\&NT}  & 17.79         & 20.48       \\ \cline{2-8} 
+		& \textit{\textbf{Interaction}}                  & 128.01                                       & \textless.05                                        & 0.08                                       & \multicolumn{3}{l|}{}                          \\ \hline
+		\multirow{5}{*}{\textbf{\begin{tabular}[c]{@{}l@{}}Time to complete\\the reach\end{tabular}}} & \multirow{2}{*}{\textit{\textbf{Environment}}} & \multirow{2}{*}{18.72}                       & \multirow{2}{*}{\textless.05}                       & \multirow{2}{*}{0.01}                      & \textit{Real}    & 0.78          & 0.25        \\ \cline{6-8} 
+		&                                                &                                              &                                                     &                                            & \textit{Virtual} & 0.84          & 0.32        \\ \cline{2-8} 
+		& \multirow{2}{*}{\textit{\textbf{Feedback}}}    & \multirow{2}{*}{208.62}                      & \multirow{2}{*}{\textless.001}                      & \multirow{2}{*}{0.13}                      & \textit{V\&T}    & 0.72          & 0.24        \\ \cline{6-8} 
+		&                                                &                                              &                                                     &                                            & \textit{NV\&NT}  & 0.94          & 0.30        \\ \cline{2-8} 
+		& \textit{\textbf{Interaction}}                  & 38.17                                        & \textless.001                                       & 0.03                                       & \multicolumn{3}{l|}{\textit{}}                 \\ \hline
+		\multirow{5}{*}{\textbf{Distance Traveled}}          & \multirow{2}{*}{\textit{\textbf{Environment}}} & \multirow{2}{*}{1.25}                        & \multirow{2}{*}{0.26}                               & \multirow{2}{*}{0.001}                     & \textit{Real}    & 56.03         & 34.09       \\ \cline{6-8} 
+		&                                                &                                              &                                                     &                                            & \textit{Virtual} & 60.43         & 23.42       \\ \cline{2-8} 
+		& \multirow{2}{*}{\textit{\textbf{Feedback}}}    & \multirow{2}{*}{1272.69}                     & \multirow{2}{*}{\textless.001}                      & \multirow{2}{*}{0.47}                      & \textit{V\&T}    & 41.22         & 24.20       \\ \cline{6-8} 
+		&                                                &                                              &                                                     &                                            & \textit{NV\&NT}  & 80.24         & 17.44       \\ \cline{2-8} 
+		& \textit{\textbf{Interaction}}                  & 68                      & \multicolumn{1}{l|}{\textless.001}                  & \multicolumn{1}{l|}{0.05}                  & \multicolumn{3}{l|}{\textit{}}                 \\ \hline
+		\multirow{5}{*}{\textbf{Average Velocity}}           & \multirow{2}{*}{\textit{\textbf{Environment}}} & \multirow{2}{*}{2.67}  & \multicolumn{1}{l|}{\multirow{2}{*}{.102}} & \multicolumn{1}{l|}{\multirow{2}{*}{.002}} & \textit{Real}    & 62.49         & 40.67        \\ \cline{6-8} 
+		&                                                & \multicolumn{1}{l|}{}                        & \multicolumn{1}{l|}{}                               & \multicolumn{1}{l|}{}                      & \textit{Virtual} & 64.64         & 28.00        \\ \cline{2-8} 
+		& \multirow{2}{*}{\textit{\textbf{Feedback}}}    & \multirow{2}{*}{1358.21} & \multicolumn{1}{l|}{\multirow{2}{*}{\textless.001}} & \multicolumn{1}{l|}{\multirow{2}{*}{0.48}} & \textit{V\&T}    & 43.16         & 25.46        \\ \cline{6-8} 
+		&                                                & \multicolumn{1}{l|}{}                        & \multicolumn{1}{l|}{}                               & \multicolumn{1}{l|}{}                      & \textit{NV\&NT}  & 89.65         & 34.46        \\ \cline{2-8} 
+		& \textit{\textbf{Interaction}}                  & 131.10                    & \multicolumn{1}{l|}{\textless.001}                           & \multicolumn{1}{l|}{0.08}                 & \multicolumn{3}{l|}{\textit{}}                 \\ \hline
+		\multirow{5}{*}{\textbf{Average Acceleration}}           & \multirow{2}{*}{\textit{\textbf{Environment}}} & \multirow{2}{*}{2.91}  & \multicolumn{1}{l|}{\multirow{2}{*}{.088}} & \multicolumn{1}{l|}{\multirow{2}{*}{.002}} & \textit{Real}    & 945.27         & 616.68        \\ \cline{6-8} 
+		&                                                & \multicolumn{1}{l|}{}                        & \multicolumn{1}{l|}{}                               & \multicolumn{1}{l|}{}                      & \textit{Virtual} & 976.76         & 425.86        \\ \cline{2-8} 
+		& \multirow{2}{*}{\textit{\textbf{Feedback}}}    & \multirow{2}{*}{1389.70} & \multicolumn{1}{l|}{\multirow{2}{*}{\textless.001}} & \multicolumn{1}{l|}{\multirow{2}{*}{0.49}} & \textit{V\&T}    & 649.15         & 383.14        \\ \cline{6-8} 
+		&                                                & \multicolumn{1}{l|}{}                        & \multicolumn{1}{l|}{}                               & \multicolumn{1}{l|}{}                      & \textit{NV\&NT}  & 1360.51         & 389.35        \\ \cline{2-8} 
+		& \textit{\textbf{Interaction}}                  & 130.70                    & \multicolumn{1}{l|}{\textless.001}                           & \multicolumn{1}{l|}{0.08}                 & \multicolumn{3}{l|}{\textit{}}                 \\ \hline
+	\end{tabular}
+\end{table}
+
+
+\subsection{Impact of Vision and Haptic Feedback in IVEs} \label{Oneway}
+In this section, we will examine the different characteristics of three VR conditions (Virtual-V\&H, Virtual-V\&NH, and Virtual-NV\&NH). We investigate the relative differences between properties of reaching towards the perceived location of targets in the virtual environment when participants have visuo-haptic feedback vs. visual feedback only vs. no visual or haptic feedback.
+
+
+
+\subsubsection{Accuracy of the Estimated Reach (aka Error)} \label{accuracy1way}
+A one-way between subject ANOVA was conducted to compare the effect of virtual interaction conditions (Virtual-V\&H, Virtual-V\&NH, and Virtual-NV\&NH) on the accuracy of the reach judgments to the targets. There was a significant main effect of virtual interaction condition on the accuracy of the estimated reaches to targets, $F(2,1174)=351.66$, $p$\textless$.001$, $\eta^{2}=.38$. Post hoc comparisons using the Tukey HSD test indicated that the mean error in the NV\&NH condition ($M=24.70, SD=20.13$) was significantly higher than the mean error in the V\&H ($M=0.74, SD=8.82$) and the V\&NH ($M=-1.47, SD=14.70$) conditions (Figure \ref{fig:ErrTime}-Left). However, the V\&H and the V\&NH conditions were not significantly different from each other. 
+
+\begin{figure}
+	\centering
+	%\includegraphics[trim = 0mm 0mm 0mm 0mm, width=6.5in]{images/newFigures/ErrTDist1way2}
+	\includegraphics[trim = 15mm 100mm 0mm 103mm, width=6in]{Study3-ACMTAP2016/Images-PDF-format/ErrTime1WayHaptic}
+	\caption{\textbf{Left:} \% Error. \textbf{Right:} Time to complete a reach for three virtual conditions (Visual and Haptic Feedback (V\&H), Visual and No Haptic Feedback (V\&NH), and No Visual and No Haptic Feedback (NV\&NH)}
+	\label{fig:ErrTime}
+\end{figure} 
+
+\subsubsection{Time to Complete the Reach ($s$)}
+Similarly, a one-way between subject ANOVA was conducted to compare the effect of three virtual interaction conditions (Virtual-V\&H, Virtual-V\&NH, and Virtual-NV\&NH) on the time to complete the reach. We found that there was a significant main effect of virtual interaction condition, $F(2,1174)=126.46$, $p$\textless$.001$, $\eta^{2}=.18$. Post hoc comparisons using the Tukey HSD test indicated that the mean time to complete the reach for the NV\&NH condition ($M=1.00, SD=.36$) was significantly higher than the mean time to complete the reach of the V\&H condition ($M=.71, SD=.19$) and the V\&NH condition ($M=.87, SD=.20$) (Figure \ref{fig:ErrTime}-Right). Similarly, the mean time to complete the reach of the V\&NH condition was significantly higher than the mean time to complete the reach of the V\&H condition. In sum, the results suggest that participants in the non-visually guided condition spent more time to complete the reach as compared to the visually guided conditions. These results support the finding from Section \ref{accuracy1way}, in which participants in the NV\&NH condition perceived the target to be farther from them (overestimated distance), perhaps taking them longer to complete a reach with larger trajectories of reaching.
+
+\subsubsection{Distance Traveled ($cm$)}
+Results regarding the effect of three virtual interaction conditions on the distance traveled revealed a significant main effect, $F(2,1174)=571.23$, $p$\textless$.001$, $\eta^{2}=.49$. Post hoc comparisons using the Tukey HSD test revealed that the mean distance traveled in the NV\&NH condition ($M=76.80, SD=21.13$) was significantly higher than the mean distance traveled in the V\&NH condition ($M=42.40, SD=8.19$) and the V\&H condition ($M=46.28, SD=14.31$) (Figure \ref{fig:DistSpeed}-Left). Similarly, the mean distance traveled in the V\&NH condition was significantly higher than the mean distance traveled in the V\&H condition.  
+
+\subsubsection{Average Velocity ($cm/s$)}
+A one-way between-subject ANOVA was conducted to compare the effect of three virtual interaction conditions on the average velocity of the physical reaches. We found that there was a significant main effect of virtual interaction conditions on the average velocity, $F(2,1174)=567.61$, $p$\textless$.001$, $\eta^{2}=.49$. Post hoc comparisons using the Tukey HSD test indicated that the mean velocity for the NV\&NH condition ($M=82.34, SD=27.21$) was significantly higher than the mean velocity of the V\&NH condition ($M=36.77, SD=8.52$) and the V\&H condition ($M=49.35, SD=17.83$). Similarly, the mean velocity of the V\&NH condition was significantly lower than the mean velocity of the V\&H condition (Figure \ref{fig:DistSpeed}-Middle), $p$\textless$.001$.
+
+\subsubsection{Average Acceleration ($cm/s^2$)}
+Finally, a one-way between subject ANOVA was conducted to compare the effect of three virtual interaction conditions on the average acceleration of the physical reaches. The results indicated significant main effect of virtual interaction conditions on the average acceleration, $F(2,1174)=581.75$, $p$\textless$.001$, $\eta^{2}=.50$. Post hoc comparisons for average acceleration using the Tukey HSD test indicated that the mean acceleration for the NV\&NH condition ($M=1248.58, SD=412.50$) was significantly higher than the mean acceleration of the V\&NH condition ($M=551.69, SD=127.81$) and the V\&H condition ($M=741.83, SD=268.57$) (Figure \ref{fig:DistSpeed}-Right). The mean acceleration of the V\&NH was significantly lower than the V\&H condition. 
+
+\begin{figure}[!htb]
+	\centering
+	%\includegraphics[trim = 0mm 0mm 0mm 0mm, width=2cm,width=5in]{images/newFigures/VelAcc1way}
+	\includegraphics[trim = 15mm 115mm 0mm 115mm, width=2cm,width=6.5in]{Study3-ACMTAP2016/Images-PDF-format/DistVelAcc1WayHaptic}
+	\caption{\textbf{Left}: Distance traveled. \textbf{Middle}: Average velocity \textbf{Right}: Average acceleration for three virtual conditions (Visual and Haptic Feedback (V\&H), Visual and No Haptic Feedback (V\&NH), and No Visual and No Haptic Feedback (NV\&NH))}
+	\label{fig:DistSpeed}	
+\end{figure}
+
+
+
+\subsubsection{Discussion}
+Overall, the results from Section \ref{Oneway} (Table \ref{SumPart2}) indicate that the presence of haptic feedback had a significant effect on all the properties of physical reach motion except on the accuracy of the reaching task. When visual feedback was present, accuracy of the reaches to the target location was statistically similar in conditions with or without haptic feedback (V\&H and V\&NH) and significantly different from the condition in which the visual feedback was absent (NV\&NH). Participants in the visually guided conditions were more accurate in estimating distance to target and reaching accurately towards them compared to the non-visually guided condition in which participants overreached to the depth of targets. However, presence or absence of the haptic feedback did not have a significant effect on participants' distance judgment. Participants took shorter distances traveled to reach to the target when they had visuo-haptic feedback than when they had no visuo-haptic feedback and visual feedback only. 
+
+The average velocity results suggest that participants in the no visuo-haptic condition reached significantly faster towards the perceived location of targets as compared to the visually guided conditions (V\&H and V\&NH). These results were evident in the previous section as well in which participants in the non-visually guided reach conditions had more error or distance overestimation and larger reach trajectory distance as compared to the visually guided conditions. However, comparing the two visually guided reach conditions surprisingly revealed that the absence of haptic feedback resulted in slower or more attentive physical reaching towards the perceived location of targets in the virtual world. It appears that participants who had simultaneous visual guidance and haptic feedback (V\&H), were more confident about where they were reaching, and consequently reached faster with about the same accuracy as compared to the visually guided no haptic feedback condition (V\&NH). These findings support the notion that lack of feedback increases the level of uncertainty and consequently decreases the accuracy and control over the hand movement trajectory and motion in IVEs.
+
+\begin{table*}[]
+	\small	
+	\centering
+	\caption{Summary of Effect of Feedback in Virtual Environment}
+	\label{SumPart2}
+	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+		\hline
+		\multicolumn{1}{|c|}{\textbf{\begin{tabular}[c]{@{}l@{}}Variable\\(n=39)\end{tabular} }} & \textit{\textbf{F value}} & \textit{\textbf{p}} & \textit{\textbf{$\eta^{2}$}} & \textit{\textbf{\begin{tabular}[c]{@{}c@{}}Mean\\ V$\&$H\end{tabular}}} & \textit{\textbf{\begin{tabular}[c]{@{}c@{}}SD\\ V$\&$H\end{tabular}}} & \textit{\textbf{\begin{tabular}[c]{@{}c@{}}Mean\\ V$\&$NH\end{tabular}}} & \textit{\textbf{\begin{tabular}[c]{@{}c@{}}SD\\ V$\&$NH\end{tabular}}} & \textit{\textbf{\begin{tabular}[c]{@{}c@{}}Mean\\ NV$\&$NH\end{tabular}}} & \textit{\textbf{\begin{tabular}[c]{@{}c@{}}SD\\ NV$\&$NH\end{tabular}}} \\ \hline
+		\textbf{Accuracy}                              & 351.66                    & \textless.001       & 0.38                 & 0.74                                                                  & 8.82                                                                & -1.47                                                                  & 14.70                                                                & 24.70                                                                   & 23.13                                                                 \\ \hline
+		\textbf{\begin{tabular}[c]{@{}c@{}l@{}}Time to \\complete\\the reach\end{tabular}}            & 126.46                    & \textless.001       & 0.18                 & 0.71                                                                  & 0.19                                                                & 0.87                                                                   & 0.20                                                                 & 1.00                                                                    & 0.36                                                                  \\ \hline
+		\textbf{\begin{tabular}[c]{@{}c@{}}Distance\\Traveled\end{tabular} }                     & 571.23                    & \textless.001       & 0.49                 & 46.28                                                                 & 14.31                                                               & 42.40                                                                  & 8.19                                                                 & 76.80                                                                   & 21.13                                                                 \\ \hline
+		\textbf{\begin{tabular}[c]{@{}c@{}}Average\\Velocity\end{tabular} }                      & 567.61                    & \textless.001       & 0.49                & 49.35                                                                 & 17.83                                                                & 36.77                                                                  & 8.52                                                                 & 82.34                                                                   & 27.21                                                                 \\ \hline
+		\textbf{\begin{tabular}[c]{@{}c@{}}Average\\Acceleration\end{tabular} }                      & 581.75                    & \textless.001       & 0.50                & 741.83                                                                 & 268.57                                                                & 551.69                                                                  & 127.81                                                                 & 1248.58                                                                   & 412.50                                                                 \\ \hline
+	\end{tabular}
+\end{table*}
+
+\subsection{Visualization Using Dynamic Time Warping (DTW)} \label{DTW}
+We also investigated the difference between the trajectories reached by the participants in terms of the closeness of the paths for each specific target distance for different conditions. Thus, we used Dynamic Time Warping (\textit{DTW}) which is a well-known method for normalizing a signal based on a reference signal \cite{kr05,bw95}. Using DTW, paths were compared pairwise and the distance between them was calculated. For example, consider two paths A and B with lengths of n and m, respectively (Figure \ref{fig:DTWMethod}-1):
+
+\begin{equation} \label{pathA}
+\begin{cases}
+A =  a_1, a_2, ..., a_i, ..., a_n	\\	
+B =  b_1, b_2, ..., b_j, ..., b_m
+\end{cases}
+\end{equation}
+
+
+Using the method described in Keogh and Ratanamahatana \cite{kr05}, an n-by-m matrix was constructed, where the ith and jth element of the matrix ($M_{ij}$) is the distance d($a_i, b_j$) between the two points $a_i$ and $b_j$. Then, we calculated the Euclidean distance between each pair of points $a_i$ and $b_j$:
+
+\begin{equation} \label{euclidean distance1}
+d(a_i, b_j) = (a_i-b_j)^2
+\end{equation}
+
+Each matrix element ($M_{ij}$) corresponds to the distance between the points $a_i$ and $b_j$. Then, accumulated smallest distance was computed using the following formula (Figure \ref{fig:DTWMethod}-2 and \ref{fig:DTWMethod}-3):
+
+\begin{equation} \label{euclidean distance2}
+D(a_i, b_j) = min[D(a_{i-1}, b_{j-1}), D(a_{i-1}, b_{j}), D(a_{i}, b_{j-1})] + d(a_i-b_j)
+\end{equation}
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[trim = 0mm 0mm 0mm 10mm, width=13cm]{Study3-ACMTAP2016/Images-PDF-format/DTWFormula2}
+	\caption{\textbf{1)} Two paths each representing a physical reach. Time is represented on the horizontal axis and one of the spatial dimensions is represented on the vertical axis \textbf{2)} Optimal warping path shown with gray squares. \textbf{3)} Time alignment of the two sequences. Aligned points are indicated by the solid lines.}
+	\label{fig:DTWMethod}	
+\end{figure}
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[trim = 0mm 0mm 0mm 5mm, width=15cm]{Study3-ACMTAP2016/Images-PDF-format/DTW}
+	\caption{Spaghetti plots of physical reach motion in real environment (Left Image) and virtual environment (Right Image) for target distances corresponding to 50\% of participants' maximum arm length. The variability between the paths when reaching to close distances was significantly more in virtual world than in the real world condition.}
+	\label{fig:DTW}	
+\end{figure}
+
+Next, we categorized the paths into six groups corresponding to the different target distances (50\%, 58\%, 67\%, 75\%, 82\% and 90\% of participants' maximum arm length) to compare each of these target distances in different conditions (real vs virtual and visuo-haptic vs no visuo-haptic feedback). As explained in Section \ref{ExDesign}, we had 5 repetitions for each target distance. Then, the pairwise distances between the paths of each group were calculated and the path with the minimum average distance to the other paths was selected as the reference path. Next, the four paths were normalized based on the reference path to be used for the data analysis. Finally, we computed the Euclidean distances between the reference path and the four normalized paths.
+
+The results from a 2x2 ANOVA analysis indicated that the distance between the paths were similar in the presence and absence of visuo-tactile feedback. However, we observed a significant difference between real and virtual environments ($F(1,266)=3.97, p<0.05, \eta^2=0.02$). In a post hoc analysis, we found that the distance between the trajectories in group 1 with the target distance corresponding to 50\% of participants maximum arm length was significantly different in real and virtual environments ($F(1,47)=4.96, p<0.05, \eta^2=0.01$) (Figure \ref{fig:DTW}). The distance between the paths was significantly smaller in the real environment ($M=190, SD=78.28$) as compared to the immersive virtual environment ($M=429, SD=73.62$). This indicates that the variability between the paths when reaching to close distances was much less in the real environment as compared to the immersive virtual environment. These results support the findings in Section \ref{dist2way} in which path lines become longer and less direct, and thus less efficient, in virtual as compared to real world viewing. Overall, due to the fact that physical reach motions in near field distances are very short in terms of reaching space, it is hard to make any strong conclusion based on these results and further investigation is warranted. 
+
+
+\section{Conclusions and Future Work}
+
+In an empirical evaluation, we showed that characteristics of physical reach motions are different under viewing and feedback circumstances. Generally, participants were more accurate in the perceptual-motor task of reaching to the perceived location of targets in the real world condition as compared to its immersive virtual counterpart. Participants spent less time to complete the reaching task in the real world, but interestingly also had slower physical reach motion in the real world. This could be due to the fact that participants' depth judgments were more accurate in the real environment and consequently reached more accurately to the precise location of the targets in the real world. Whereas participants in the IVE overestimated depth and consequently overreached taking longer trajectories to reach the target. We also noticed that participants in the real world took shorter duration of the reaches and lower speed as compared to the participants in the virtual world condition. However, in the IVE participants took slightly longer time to complete the reach task, but reached with higher speed and acceleration. This increase in speed of the physical reach motions could also potentially contribute to near field distance overestimation. Generally, participants in the no visuo-haptic feedback condition were less accurate and took less efficient path trajectories to the target in the virtual world as compared to real world viewing. Participants spent significantly higher velocity to account for the inefficient and indirect path towards the target in virtual environment as compared to real world viewing. However, these negative effects were not present in the presence of visuo-haptic feedback, in which participants in real and virtual environments performed very similarly \cite{MCT06}. In sum, providing feedback during manual activity in VR is highly important as it can remedy many of the perceptual-motor differences between real and virtual environments.  
+
+We also investigated the effects of visual and/or haptic feedback on properties of physical reach motion in IVEs. We found that lack of visual information could greatly degrade physical reach performance especially by increasing the perceptual error, the time to complete the reach, as well as the velocity of physical reach motion. In our research, we also found that the presence or absence of haptic feedback does not seem to have any positive or negative effects on the error rate or the ratio between the reached location to the actual target location with respect to the participants' physical reaches in the IVE. Therefore, having accurate visual feedback alone may alleviate the lack of haptic feedback on the accuracy of reaches to the target during physical reaching in 3D interaction in IVEs. However, the presence of haptic feedback significantly changed other properties of the physical reach motion, such as time to complete the reach task, distance traveled, and average velocity towards the target. In most applications of Virtual Reality technology as well as in most experimental work conducted in laboratories, there is limited or no opportunity for the users to receive multi-sensory feedback during manual task performance. In the majority of the best current existing applications, haptic feedback is missing, which could potentially result in inaccurate or inefficient performance. So, in VR applications where users are interacting with the environment, such as manufacturing, search and rescue missions, and military training, it is important to provide users with ample sensory feedback and opportunity to calibrate perceptual-motor systems \cite{BP98} for enhanced performance. 
+
+
+One of the limitations of this study was that we characterized human reach motion using the end effector location only. Therefore all the observations in this work could only apply to selection types of activities based on the location of the end effector in a manner similar to using a 3D input device such as a stylus, wand or joystick. In future studies, we would like to also track the elbow, shoulder and neck to investigate how users reach from different vantage points and approach angles using a richer kinematic data. Thus, we plan to employ a motion capture system to track the torso and limb joint positions and angles to investigate physical reaching behaviors, and how their properties differ between real and virtual environments and in the influence of visuo-haptic feedback. Another limitation of this study was the lack of a self-avatar in virtual interaction conditions. In the IVE, participants were unable to see their hand and arm, and only saw a floating stylus representing their end effector location. Whereas in the real world condition, they were able to see their hand and arm in the different feedback conditions along with the stylus denoting the end effector location. Therefore, we also plan to empirically evaluate the impact of an immersive self-avatar in the immersive virtual environment, and examine its effects on altering the properties of human reach motion as compared to the current no self-avatar interaction conditions in the IVE.
+
+
+
+
+
+
+
+%\bibliography{Reference}

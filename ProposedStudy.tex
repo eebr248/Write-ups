@@ -1,0 +1,149 @@
+
+\chapter{Effects of Anthropometric Fidelity on Reach Boundary Estimation}%: Enhancing Proprioception via Self-Avatars Calibration on Spatial Perception in IVE}
+
+In VR applications, avatars are a digital representation of the users from either a third person or a first person perspective. A life size visual representation of the user from a first person perspective is also known as immersive self-avatar where the user's body is co-located with its virtual representation. Research has shown the presence of an avatar in the IVE affects how people perceive their environment. The presence of other virtual agents also influences the user's behavior in IVE \cite{HUH10,SAD+06,ZUG+07}. Recent perception research suggests the presence of an avatar influences the user's space perception in medium field in IVEs \cite{MCW+10,LNW+03,WJS+08}. Mohler et al. \cite{MCW+10} showed that accuracy of users' distance estimation was altered via the self-avatar representation; fully-articulated and tracked self-avatar which animated in correspondence with the users' movements produced highest improvement and no avatar produced lowest improvement on users space perception through blind walking for distances greater than 1m. Similarly, Ries et al. \cite{RIM+09} investigated the effect of self-avatar visual fidelity on users' spatial perception via direct blind walking. They provided users with either a fully tracked, high fidelity avatar or a fully tracked but simplified avatar (only the tracking marker locations were presented using small spheres). They then compared their results with no avatar condition and found that participants in low fidelity avatar performed only slightly better than no avatar condition. However, participants distance estimation in high fidelity avatar was significantly more accurate than the low fidelity and no avatar conditions. They concluded that a minimal level of the avatar visual fidelity may be required to improve users' distance judgment. 
+
+Most of the previous research has been investigated the space perception in medium field via walking. The main visual contributors during walking are height of the eyes and fixation point on the ground which is approximately two steps ahead \cite{F15}. However, the two main visual contributors in on-line control of hand movements while reaching are a) the position of the hand and b) the hand motion \cite{SK04}. Generally, walking and reaching carry two distinct mechanisms which can affect distance estimation quite differently in the presence of the self-avatar. It has been shown that the reaches become more accurate when ones can see their arm while reaching in real world \cite{PBL+00,HHC+98}. McManus et al. \cite{MBS+11} showed that the users' performance in terms of accuracy and time to complete in the presence of self-avatar improved when users were allowed to interact with the environment. Overall, it is not well understood if the anthropometric symmetry of self-avatar with its real world representation have any effect on users distance estimation via walking and reaching tasks in IVE. The presence of self-avatar and its visual fidelity may have a greater impact on users' distance estimation in reaching activities as compared to walking tasks. Thus, we are interested to explore how the anthropometric characteristics of the arm and hand affect users' perception of their hand position and movements. In this experiment, the real world condition is the reference group in which all the other three conditions (immersive self-avatar, low-fidelity self-avatar and end effector only) will be compared to in terms of their anthropometric similarities  to the real world representation of the body\footnote{The results from the real world data was published at Acta Psychologica Journal \cite{DEH+17}.}. The immersive self-avatar has the highest anthropometric similarity to the real world condition in which the self-avatar was created using an inverse kinematic system with an accurate head and hands positions using HTC Vive HMD and two controllers \textcolor{red}{figure ???}.
+
+Testing the GitKraken  
+
+
+%The results of this study may help other researchers to decide between a generic or a more anthropometrically accurate self-avatar in their VR simulations.
+
+
+
+% based on joint position we can determine the end effector position. basically studying to see if giving joint position only will be enough. 
+
+\cite{J73}
+% \cite{J73} Basic principles of visual vector analysis: "equal and simultaneous motions in a series of proximal elements automatically connect these elements to rigid percepttual units"
+%"from a mechanical point of view, the joints of the human body are end points of bones with constant length and at the same time he points of connection between such motion units. Consequently, the motion tracks of the main joints were chosen as representation motion elements"
+
+Therefore, we are investigating the effect of the visual fidelity of the self-avatar on user's distance perception, reach boundaries, and physical reaching properties in near-field in IVEs. To create a realistic animation depicting user's motion in near field, the simulation requires very accurate body and hand tracking. Many techniques have been developed to improve the real-time rendering and animation to produce a high fidelity immersive self-avatar in IVEs. In the following experiment we will use HTC Vive HMD and its two controllers to track the head and hands, along with a Synetial tracking suit to track the other part of the body for an realistic and accurate animation.  
+
+
+
+\begin{figure}
+	\centering
+	%\includegraphics[trim = 0mm 0mm 0mm 0mm, width=6.5in]{images/newFigures/ErrTDist1way2}
+	\includegraphics[trim = 15mm 110mm 0mm 40mm, width=6.5in]{NewImagesPDF/Conditions4}
+	\caption{Shows a digital illustration of a a) high-fidelity , b) medium-fidelity, c) low-fidelity d) no self-avatar from the viewer’s perspective in the IVE performing a closed-loop depth estimation task. (This image is only to showcase the conditions at this stage of the development. Their final appearance will be different.)}
+	\label{fig:Self-Avtar_Conditions}
+\end{figure}
+
+\section{Hypothesis}
+
+There is little or no research on the visuo-motor calibration effects of visual fidelity of immersive self-avatars on distance estimation in interaction space in IVE. This study has four primary hypotheses. First, we hypothesize that just the existence of the self-avatar will calibrate user's interaction space depth perception in an IVE. Therefore, participants distance judgments will be improved after the calibration phase regardless of self-avatar's visual fidelity as compared to no avatar condition. Second, the magnitude of the changes from pretest to posttest will be different based on the visual details of the self-avatar presented to the participants. Third, we predict distance estimation accuracy will be the highest in high-fidelity  self-avatar condition and the lowest in no self-avatar condition. Forth, we predict that the properties of physical reaching responses vary systematically between different visual fidelity conditions. 
+
+%we expect the adaptation happens fastest for high-fidelity avatar and slowest for low-fidelity avatar in calibration phase and reversion back to normal occurs fastest for low-fidelity avatar and slowest for high-fidelity avatar in posttest phase.
+
+\section{Experiment Methodology}
+
+\subsection{Participants}
+Forty-eight undergraduate students will be recruited from the student population of Clemson University and received course credit for their participation. Participants will be required to be right handed as all equipment to be used is for right-handed participants. As participants enter the testing area, they will be given a brief overview of the purpose of the experiment and informed consent will be obtained. All participants will be tested for visual stereo acuity. Participants will be randomly assigned to one the four conditions described in Section \ref{ExpDesign}. 
+
+\subsection{General Setup}
+Figure \ref{fig:Self-Avtar_apparatus} depicts the proposed apparatus to be used in the experiment which will be represented in VR. Participants will be seated in a wooden chair, which will be situated approximately 20cm from the edge of the wooden table. The tabletop will be 50cm wide by 130cm long, and will be 76.2cm tall (which is standard table height). Seat height will vary between 43 and 48cm depending on the height of the participant. Shorter participants will be allowed to sit on a cushion if they desire. The center of the table will be aligned with the midpoint between the participants’ right eye and right shoulder. Participants will be outfitted with six Pohlemus sensors: 1. On their forehead. 2. On their neck. 3. On their shoulder. 4. On their elbow. 5. On their wrist. And 6. On their hand. Aside from the sensor on the forehead, the other five sensors will all be placed on the bony protrusions at those points on the body. The base for the Pohlemus system was located underneath the table and out of view of the participants. The virtual environment, which will be a recreation of the room the experiment will be performed in, will be displayed using a HTC VIVE HMD.
+
+\begin{figure}
+	\centering
+	%\includegraphics[trim = 0mm 0mm 0mm 0mm, width=6.5in]{images/newFigures/ErrTDist1way2}
+	\includegraphics[trim = 15mm 100mm 0mm 100mm, width=6.5in]{NewImagesPDF/Apparatus}
+	\caption{Shows the near-field distance estimation apparatus. The participant's head, neck, shoulder, elbow and stylus are tracked in order to record perceived distances of physical reach in the IVE.}
+	\label{fig:Self-Avtar_apparatus}
+\end{figure}
+
+As mentioned previously, four different avatars regarding different visual fidelities will be utilized in the experiment. In any given block of trials participants will be asked to reach for a target with their right arm and hand. In the real world, participants will be given a Vive controller to hold. The Vive controller is 26.5cm long from base to tip, 3cm wide at the base of the handle, 5cm wide at the top of the handle, 3cm deep at the handle, and is 12cm wide at its widest point. The Vive controller will allow the experimenters to accurately model participants wrist position in VR. The controller will be outfitted with a plastic mold that can hold a 10cm wooden rod with a rubber tip (Figure \ref{fig:Self_Avatar_Stylus}). 
+
+\begin{figure}
+	\centering
+	%\includegraphics[trim = 0mm 0mm 0mm 0mm, width=6.5in]{images/newFigures/ErrTDist1way2}
+	\includegraphics[trim = 15mm 30mm 0mm 30mm, width=3in]{NewImagesPDF/Stylus}
+	\caption{HTC Vive controller with its plastic mold attached to the participant hand using a wrist brace.}
+	\label{fig:Self_Avatar_Stylus}
+\end{figure}
+
+Participants will be asked to reach for a visual target stimuli in IVE. For any trial, the target will consist of a virtual representation of three illuminated LED lights shown in Figure \ref{fig:LEDLights}. The middle light in the target will correspond to the target distance, and with the other two lights illuminated the length of the target area will be three cm. Targets will be presented at 13 different distances, ranging from 20.5cm to 121.5cm. The difference between each target will be approximately eight cm. Targets will be five random permutation of thirteen target distances. Therefore, each target will be presented five times each for a total of 65 reaches per phase. 
+
+\begin{figure}
+	\centering
+	%\includegraphics[trim = 0mm 0mm 0mm 0mm, width=6.5in]{images/newFigures/ErrTDist1way2}
+	\includegraphics[trim = 15mm 85mm 0mm 85mm, width=4in]{NewImagesPDF/LEDLights}
+	\caption{Three LED lights will be illuminated on the table for each trial.}
+	\label{fig:LEDLights}
+\end{figure}
+
+\subsection{Visual aspects}
+An HTC Vive HMD weighing about 563 g will be used for the experiment. The HMD contains Fresnel lens with a resolution of 1200 x 1080 pixels for viewing a stereoscopic virtual environment with IPD adjustment. The field of view of the HMD was determined to be 110 degrees horizontal and 113 degrees vertical. The simulation will be consisted of the virtual model of the experimental room and apparatus created using Blender and Unity3D. The virtual replica of the apparatus include Table, chair, HTC Vive controllers with a plastic mold, and wooden rod. %A virtual body seated on the chair was also presented to provide an egocentric representation of self whether the participant looked down [Figure \ref{fig:virtualBody}].
+
+\section{Procedure}
+As participants enter the testing area, they will be given a brief overview of the purpose of the experiment and informed consent will be obtained. All participants will be asked to sit on the wooden chair at one end of the wooden table. Various motion sensors will be placed on the participant through the use of a long sleeve shirt (Figure \ref{fig:Self-Avtar_apparatus}). 
+
+Before any trials occur, various anthropometric measurements of the participant will be collected using the HTC Vive controller (Figure \ref{fig:measurement}). The experimenter will measure participant standing height (floor to top of head) and various aspects of their arm, such as the length from acromion process to lateral epicondyle of the humerus (shoulder to elbow), and the length from the lateral epicondyle of the humerus to the end of the index finger (elbow to end of index finger). The experimenter will also measure various aspects of the participants arm relative to the positions of the sensors. %The experimenter will also collect participant shoulder height from the floor when the participant is seated, measured as floor to acromion process. 
+
+\begin{figure}
+	\centering
+	%\includegraphics[trim = 0mm 0mm 0mm 0mm, width=6.5in]{images/newFigures/ErrTDist1way2}
+	\includegraphics[trim = 15mm 89mm 0mm 89mm, width=5in]{NewImagesPDF/Measurement}
+	\caption{Measuring participant's height in virtual environment.}
+	\label{fig:measurement}
+\end{figure}
+
+After these measurements have been collected, the participant will participate in two body ownership tasks in VR. The tasks are based upon those frequently used by Slater in his research on presence in VR. In the different conditions, participants will observe the self-avatar holding a tool. To induce a feeling of embodiment, participants will perform two tasks prior to the experiment. First, from a first-person viewpoint, participants will be able to see their movements in the mirror where the self-avatar movements are synchronized with their actual body movements (Figure \ref{fig:ownership}). After five minutes of performing a set of predefined movements in front of mirror participants will progress to the second task. In the next task, participants will use the HTC Vive controllers to tap different parts of their body such as their shoulders, chest, hip, etc. with a synchronous visuo-tactile stimulus. In total, the body ownership tasks should last for about ten minutes. 
+
+\begin{figure}
+	\centering
+	%\includegraphics[trim = 0mm 0mm 0mm 0mm, width=6.5in]{images/newFigures/ErrTDist1way2}
+	\includegraphics[trim = 15mm 90mm 0mm 90mm, width=5in]{NewImagesPDF/Avatar}
+	\caption{Participants will hold a stylus to use for tapping his/her head, shoulders, and chest when looking at his/her avatar in the mirror.}
+	\label{fig:ownership}
+\end{figure}
+
+Next, the experimenter will demonstrate the types of reaches that are appropriate in the experiment. Participants will be instructed to reach as quickly and as accurately as possible on each trial. The major restriction participants will have is that they must remain seated (meaning stay on the seat pan) during any attempted reach. During the course of the actual reach participants may engage their arm only, or may engage their entire upper body (i.e. bending at the waist to reach further).
+
+Regardless of phase, each trial will begin with the participant resting their right arm on the armrest of the chair and their back against the back of the chair. Participants will be instructed that this is the starting point for each trial. To ensure uniformity in starting positions across participants, it will be emphasized to participants that their starting posture is critical for the study.
+
+
+\section{Experiment Design} \label{ExpDesign}
+The proposed experiment will utilize a 3 (Condition: High-fidelity, Medium-Fidelity, Low-fidelity Avatar) by 3 (Phase: Pretest, Calibration, Posttest) mixed groups design (Figure \ref{fig:ProposedExpDesign}). Condition will be a between subjects variable and phase will be a within subjects variable. The first three conditions will involve use of an avatar’s arm that is directly proportional to the dimensions of the user’s own arm where the visual fidelity will be altered in the calibration phase. 
+
+\begin{figure}
+	\centering
+	%\includegraphics[trim = 0mm 0mm 0mm 0mm, width=6.5in]{images/newFigures/ErrTDist1way2}
+	\includegraphics[trim = 20mm 45mm 0mm 20mm, width=6.5in]{NewImagesPDF/expDesign1}
+	\caption{Experiment design.}
+	\label{fig:ProposedExpDesign}
+\end{figure} 
+
+\subsection{Pretest}
+In the pretest, participants will be instructed to reach to the target that will appear on the table at various distances from them. As part of each trial the participant will be asked to perform a reach if they believe they can reach the target. After viewing the target and at the initiation of their reach, participants will be shown a grey screen to simulate closing their eyes but maintaining the same overall illumination, and reach out with the stylus and place the tip of the stylus as close to the center of the target as possible. After attempting to reach the target, participants will be instructed to return their hand and arm to the starting point to begin the next trial. If they do not believe they can reach the target they will be instructed to say “no”. Regardless of condition, all participants will perform the pretest with a high-fidelity avatar. In this phase, participants will only receive haptic feedback from when the controller they are wielding in the real world contacts the surface of the table.
+
+\subsection{Calibration phase}
+After the pretest, participants will complete the calibration phase. The task in this phases will be the exact same as in the pretest, except they will perform less reaches to fewer distances. Participants will only be presented with nine different distances, and each distance will be presented five times. The first six distances presented in the calibration phase will all be reachable targets to encourage participants to engage in a reach. After the sixth trial, distances that are unreachable will be presented as well. None of the nine distances in the calibration phase will be identical to the 13 distances presented in the pre and posttest. 
+
+The primary manipulation of the experiment will occur in the calibration phase. Participants will experience one of the following conditions: a) high-fidelity avatar b) medium-fidelity avatar, c) low-fidelity avatar d) no avatar. Participants will not be informed about the changes in the visual fidelity. In this phase, participants will receive haptic feedback from when the controller they are wielding in the real world contacts the surface of the table. Then, once contact has been made participants will be allowed to open their eyes and adjust their reach so the end of the virtually presented end effector is in the center of the target, thus receiving visual feedback as well.
+
+\subsection{Posttest}
+The posttest will be identical to the pretest. All participants will complete the exact same reaching task while using a high-fidelity avatar arm. In this phase, participants will only receive haptic feedback from when the controller they are wielding in the real world contacts the surface of the table. Importantly, the experimenters will ensure there is no delay between the calibration phase and the posttest. By doing so, we hope to preserve the just modified action capabilities of the avatar for the posttest, as a long delay between these two phases might cause the calibration to disappear.
+
+\subsection{Post Data Collection}
+After the conclusion of data collection, the experimenter will again measure various aspects of the participants arm to ensure that the positions of the sensors did not move over the course of the experiment. In addition, the participant will be asked to perform two maximum reaches with their arm only (reaching their arm straight out as far as they can without engaging their shoulder or back) and two maximum reaches with their entire upper body (by reaching as far as they can and touching the table with no restrictions other than remaining seated in the chair). Lastly, participants will be given a brief questionnaire designed to measure the degree of body ownership they felt over the avatar in VR. A manipulation check will also be administered to participants. They will be asked if they noticed anything odd that occurred during the course of the experiment.
+
+
+\section{Data Preprocessing}
+Similar to previous chapters, we extracted the start and the end of the ballistic reach by analyzing the XY position trajectories and speed profile associated with the physical reach motions for the sensors attached to the user's head, neck, shoulder, elbow, and hand. These data will then be used to analyze the reaching behavior of the users under different circumstances. 
+
+
+\section{Expected Results}
+We will use HTC Vive and Polhemus electromagnetic tracking system to track and create accurately scaled articulated models of the users and animate the limbs to match the physical reaching activities in our perception apparatus described in previous section using the \textit{Inverse Kinematic} (IK). We have plan to use a Synertial tracking suit as a confirmation to our IK system to more accurately animate the user's upper body movements. The anthropometric measurement prior to the experiment will ensure that the participant’s limbs are scaled accordingly. Together with a tracked stylus, participants can receive accurate visual feedback of their actions (proprioception) in a closed-loop condition via the immersive self-avatar in the IVE. In order to assess the impact of visuo-motor calibration to enhanced proprioception via the immersive self-avatar, participants will perform the closed-loop calibration phase in one of four visual fidelity conditions: 1) high-fidelity: realistic limb matching the size and scale of the participant’s limbs, 2) medium-fidelity: abstract rendering of joint and limb location only, 3) low-fidelity: abstract rendering of joint locations only, and 4) no avatar: floating stylus only. We expect to find that the high-fidelity self-avatar of the participant’s arm will provide a more realistic proprioceptive cue as compared to medium, low-fidelity and no avatar, and will significantly enhance depth perception in the IVE. We also expect to find differences in their properties of physical reaching behavior. It is expected that the accuracy and precision of the reaching  task increase as more accurate anthropometric characteristic are presented to users. We also believe participants will take a faster reaches, shorter time and more paths variation to complete a reach in no avatar condition due to being presented with less information from the environment. It is expected that participants responses gradually move towards slower reaches, longer time to complete and less variation in the paths with more detailed self-avatar in the IVE similar to the finding in initial study 2 \cite{EBP+16}. 
+
+\section{Future Work}
+For our future work we would like to add three conditions to the current study (Figure \ref{fig:FutureExpDesign}); 1) Real world viewing condition, in which all the phases will be perform in RW. 2) No feedback condition, in which participants will receive no feedback in all three phases of the experiment. 3) Calibration in VR, in which participants perform the open-loop task in RW and then have calibration in VR and then perform another open-loop task in RW.
+Overall, by adding this new conditions, we then can study the differences between participants' responses in the high-fidelity VR and RW viewing conditions. We also will be able to investigate the carryover effect of the VR training to RW. Another interesting line of work will be to study the properties of physical reach behavior under different visual fidelity conditions and also their differences between the RW and VR in the presence or absence of visual feedback.
+
+\begin{figure}
+	\centering
+	%\includegraphics[trim = 0mm 0mm 0mm 0mm, width=6.5in]{images/newFigures/ErrTDist1way2}
+	\includegraphics[trim = 20mm 0mm 0mm 15mm, width=6.5in]{NewImagesPDF/expDesignFuture}
+	\caption{Experiment design.}
+	\label{fig:FutureExpDesign}
+\end{figure}

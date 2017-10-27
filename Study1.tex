@@ -1,0 +1,375 @@
+
+\chapter{Initial Study 1} \label{Study1}
+
+%Effects of Visual and Proprioceptive Information in Visuo-Motor Calibration During a Closed-Loop Physical Reach Task in Immersive Virtual Environments
+% Carryover Effects of Calibration to Visual and Proprioceptive Information on Near Field Distance Judgments in 3D User Interface
+
+It has been suggested that closed-loop feedback of travel and locomotion in an \textit{Immersive Virtual Environment} (IVE) can overcome compression of visually perceived depth in medium field distances in the virtual world~\cite{KCT13,MCT06}. However, very few experiments have examined in IVEs the carryover effects of multisensory feedback during manual dexterous 3D user interaction in overcoming distortions in near-field or interaction space depth perception, and the relative importance of visual and proprioceptive information in calibrating users’ distance judgments. In the following experiment, we investigated carryover effects of calibration to inaccurate visual feedback, with participants making reach estimates to near-field targets in the IVE. There were three conditions of perturbed visual feedback in an IVE. These perturbations were such that the participants' reach estimates were scaled to appear 20\% closer to the viewer than the actual physical location of the estimate (\textit{Minus condition}), veridical with no scaling (\textit{Neutral condition}), or 20\% farther from the participant reaches (\textit{Plus condition}). To test for calibration, a baseline measure in an IVE in which participants complete distance estimates without feedback will be compared to IVE estimates made after visual feedback was provided. \textit{It is hypothesized that participants whose reach appeared 20\% closer during the calibration session will believe they are under-reaching, and thus will reach farther after the calibration. It is also hypothesized that participants who view their reach to be 20\% farther during the calibration session will believe they are overreaching, and thus will reach shorter after the calibration.} Similarly, during closed-loop physical reach responses, we expect that participants to physically reach farther in Minus condition and closer in Plus condition to the perceived location of the targets, as compared to Neutral condition in which participants' physical reach is expected to be more accurate to the perceived location of the target. These perturbations will be explained in detail in the experiment methodology section. In our experiment, distance judgments were measured using physical reach responses to targets in an IVE. We specifically examined the end of the ballistic reach phase in order to ascertain the perceived depth judgments.
+
+
+\textit{\textbf{Research Questions:}} 
+\begin{description}
+	\item[I] Are users' reach responses in post-test (open-loop) affected by the calibration phase in the near field in IVE?
+	\item[II] Do users scale their depth judgments to visual and proprioceptive information during 3D interactions in the near field?
+	\item[III] How do users improve their near field distance judgments during (closed-loop) visual feedback in the IVE?
+	\item[IV] To what extent are users' distance judgments affected by mismatch in visual and proprioceptive information during closed-loop interaction in the IVE?
+	\item[V] Does closed-loop interaction in an IVE cause continuous improvement in distance estimation over time?
+\end{description}
+
+\section{Experiment Methodology}
+
+\subsection{Participants}
+36 participants (26 female, 10 male) were recruited from the student population of Clemson University and received course credit for their participation. The participants' handedness was recorded. All participants in this experiment were right handed. All participants were tested for visual acuity and performed a stereoacuity using the Titmus Fly Stereotest. All participants provided informed consent.
+
+\subsection{General Setup}
+Figure \ref{fig:apparatus} shows the experimental apparatus used for this experiment. Participants were asked to sit on a wooden chair to which their shoulders were loosely tied. This was done to serve as a gentle reminder for them to keep their shoulders in the chair during the experiment. Otherwise, they had the full control of their head and arms. Participants reached with a tracked wooden stylus that was 26.5cm long, 0.9cm in diameter, and weighing 65g. All users were asked to hold the stylus in their right hand in such a way that it extended approximately 3cm above and 12cm below their closed fist. Each trial began with the back end of the stylus inserted in a 0.5cm groove on top of the launch platform, which was located next to the participant's right hip.
+
+The target consisted of a groove that was 0.5cm deep, 8.0cm tall, and 1.2cm wide. The groove extended from the center of the base of a 8.0cm wide and 16cm tall white rectangle. The target was enclosed within a 0.5cm border made from thick, black tape. This was added to help participants to distinguish the target from the white background wall. Participants were required to match the stylus tip to the groove of the target during the experiment.
+
+The target was placed at participants' eye level and midway between the participants' eyes and right shoulder in order to keep the distance from the eye to the target as close as possible to the distance from the shoulder to the target. The position of the target was adjusted by the experimenter using a 200cm wooden optical rail. The rail extended in depth along the floor and was parallel to the participants' viewing direction. The target was attached to the optical rail via an adjustable, hinged stand. To prevent any interference with the electromagnetic tracking system, the target, stand, stylus and optical rail were made of wood.
+
+\begin{figure}[th!]
+	\centering
+	\includegraphics[trim={0 350 0 0}, width=5in]{Study1-ACMSAP2014/images/ApparatusD}
+	\caption{Shows the near-field distance estimation apparatus. The target, participant's head, and stylus are tracked in order to record actual and perceived distances of physical reach in the IVE.}
+	\label{fig:apparatus}
+	
+\end{figure}
+
+\subsection{Visual aspects}\label{VisualAspect}
+
+An NVIS nVisor SX111 HMD weighing about 1.8kg was used for the experiment. The HMD contains two LCOS displays each with a resolution of 1280 x 1024 pixels for viewing a stereoscopic virtual environment. The field of view of the HMD was determined to be 102 degrees horizontal and 64 degrees vertical. The field of view was determined by rendering a carefully registered virtual model of a physical object (similar to ~\cite{NAB+11}). The simulation used here consisted of the virtual model of the training room, experimental room and apparatus created using Blender. The virtual replica of the apparatus included target, stand, chair, tracking system, and stylus. A static virtual body seated on the chair was also presented to provide an egocentric representation of self whether the participant looked down [Figure \ref{fig:virtualBody}].
+
+\begin{figure}[th!]
+	\centering
+	\includegraphics[trim={50 530 0 50}, width=6.5in]{newImagesPDF/virtualBody}
+	\caption{The left image shows a screenshot of the training environment from the participant’s first person perspective with HMD. The right image shows a screenshot of the avatar as seen from the participant’s perspective.}
+	\label{fig:virtualBody}
+	
+\end{figure}
+
+Since the haptic feedback was removed from the experiment, we designed our simulation so that the stylus' tip would turn red when it was within a 1cm radius of target's groove. Figure \ref{fig:Target_Stylus} shows three screen shots of the virtual target and stylus. Based on the visual information provided to participants, they visually detected when the stylus intersected a groove in the target's face in the IVE.
+
+\begin{figure}[th!]
+	\centering
+	\includegraphics[trim={50 580 0 50}, width=7in]{Study1-ACMSAP2014/images/TargetStylusH}
+	\caption{Image on the left shows a screen shot of the virtual target as perceived by participants in the IVE with the stylus in front of the target. Image on the middle shows that the tip of the stylus turned red when it was placed in the groove of the target, and on the right shows stylus passed the target. Participants received visual and proprioceptive feedback only when interacting with the target during closed-loop trials.}
+	\label{fig:Target_Stylus}
+	
+\end{figure}
+
+\section{Procedure}
+Upon arrival, all participants completed a standard informed consent form and demographic survey. Participants were provided with documentation describing the experimental procedures after which their informed consent was acquired. All participants were tested for visual acuity of 20/40 or better using the Titmus Fly Stereotest when viewing an image with a disparity of 400 sec of arc. The interpupillary distance (IPD) was then measured using the mirror-based method described by Willemsen et al.~\cite{WGT+08}. Later, the measured IPD was used as a parameter for the experiment simulation to set the graphical inter-ocular distance, and the HMD was adjusted accordingly for each participant. Participants were instructed to sit straight up in a chair in a comfortable position. Participants' shoulders were then loosely strapped to the back of the chair to serve as a gentle reminder for them to keep their shoulders back in the chair during the experiment. Before measuring the participant's maximum arm reach, the physical target height was set to the participant's eye level. The participant's maximum arm reach was measured by adjusting the physical target so that the participant could place the stylus in the groove of the target with their arm fully extended. However, this was performed without using the extension of their shoulder~\cite{ANL+12}. The maximum arm length was then used to generate target distances to be set during the experiment. Participants were instructed on how to make their physical reach judgments before putting on the HMD. They were asked to start each trial with the stylus in the dock next to their hip and reach to the virtual target with a fast, ballistic motion to where they believe the virtual target had been, and then adjust their initial reach by moving back and forth. 
+
+All participants started the experiment by viewing a training environment in IVE that was designed to help the participants acclimate to the viewing experience. Next, the participants were presented with a photorealistic virtual representation of the real room within which the experiment took place. The virtual room also included an accurate replica of the experimental apparatus. During testing, the participants performed 2 practice trials followed by 30 trials of blind reaching in the baseline or pretest session. Trials consisted of 5 random permutations of 6 target distances corresponding to 50, 58, 67, 75, 82, and 90 percent of participant's maximum arm length. For each trial, with the HMD display turned off, the target distance was adjusted using the physical target to which the sensor in attached. Then, vision was restored and virtual target was displayed. Once participants notified the experimenter that they were ready, the vision in the HMD was turned off via a key press to eliminate visual feedback in pretest and posttest sessions and stayed on in calibration session. In the open-loop blind reaching (pretest and posttest sessions), the physical target was then immediately retracted to prevent any collision between the participants' stylus and target. The tracked position of the stylus (hand), target, and head was logged over the duration of the experiment.
+
+To reduce auditory cues to the target's position during preparation for the next trial, white noise was played in the participant's headphones. The initiation of the white noise was also used as a signal for the participants to return their hand to the stylus dock in preparation for the next trial. The next trial distance was then adjusted with the HMD display turned off in IVE conditions.% or participants were asked to close their eyes in RW conditions. 
+
+\section{Tracking of Physical Reach}
+A 6 degree of freedom Polhemus Liberty electromagnetic tracking system was used to track the position, and orientation of the participant’s head, stylus, and target. % in both the IVE and RW conditions. 
+Due to electromagnetic tracking systems sensitivity to metallic objects in physical environment, the tracking system was calibrated to minimize the interference, which are described in detail in our previous works (See Napieralski et al. ~\cite{NAB+11} and Altenhoff et al. ~\cite{ANL+12}). The calibration step insured the tracking system was accurate to 0.1cm and 0.15 degree. Raw position and orientation values of the tracked sensors were logged in a text file %in both the IVE and RW conditions
+for each participant. This data was later used to analyze the results of the experiment.
+
+
+\section{Experiment Design}
+The experiment consisted of three sessions: a baseline measure without feedback (pretest), a calibration session with visual feedback, and finally a post-interaction session without feedback (posttest). The experiment used a between subjects design where participants were randomly assigned to one of the three viewing conditions in the calibration session (Figure \ref{fig:Exp_Design}).
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[trim = 53mm 207mm 62mm 42mm, clip,width=5in]{Study2-3DUI2015/images/ExpDesign}
+	\vspace{-.5em}
+	\caption{Experiment design.}
+	\label{fig:Exp_Design}
+	
+\end{figure}
+
+In the pretest, participants performed 2 practice trials followed by 30 trials of blind reaching in the baseline pretest session. Trials consisted of 5 random permutations of 6 target distances corresponding to 50, 58, 67, 75, 82, and 90 percent of participant's maximum arm length. At least two days after the pretest was completed, participants completed 20 physical reaches in the IVE with visual feedback in the calibration session. Participants continued each reach until they successfully placed the virtual stylus into the virtual target's groove. The three viewing conditions for the calibration session were as follow:
+%\vspace{-.5em}
+\begin{itemize}
+	\item \textit{Minus Condition}: -20\% gain where the visual stylus appeared at 80\% of the distance of the physical stylus.
+	\vspace{-.4em}
+	\item \textit{Neutral Condition}: 0\% gain, or no gain, where the visual stylus was co-located with the physical stylus.
+	\vspace{-.4em}
+	\item \textit{Plus Condition}: +20\% gain where the visual stylus appeared at 120\% of the distance of the physical stylus.
+\end{itemize}
+
+%\vspace{-.5em}
+Figure \ref{fig:Conditions} depicts the physical and virtual stylus in different conditions. Based on the participants' viewing condition and their maximum arm reach, they were provided with five random permutations of four target distances (a total of 20 trial distances.) For Minus viewing condition four target distances corresponding to 50, 58, 67, and 75 percent of the participant's maximum reach was displayed, for Neutral viewing condition four target distances corresponding to 58, 67, 75, and 82 percent of the participant's maximum reach was displayed, and for Plus viewing condition four target distances corresponding to 67, 75, 82, and 90 percent of the participant's maximum reach. Note that in Minus condition, the virtual stylus appeared to be closer to the participants; therefore, participants were expected to reach physically farther. Conversely, in Plus condition the virtual stylus appeared to be farther; therefore, participants were expected to reach physically closer. At the end of the session, some participants were asked to repeat particular trials if, for instance, they appeared to make a slow, calculated reach observed by experimenters. 
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=6in]{Study2-3DUI2015/images/PerturbationsHoriz}
+	\vspace{-1em}
+	\caption{(a) Minus Condition: the virtual stylus (red lines) appears 20\% closer than its physical position (blue lines). (b) Neutral Condition: physical (blue line) and virtual (red lines) stylus are co-located. (c) Plus Condition: the virtual stylus (red lines) appears 20\% farther than its physical position (blue line).}
+	\label{fig:Conditions}
+	
+\end{figure}
+
+Right after the calibration session, the participants performed the posttest session which was identical to the pretest session. In the posttest session, participants performed 30 open-loop perceptual judgments via physical reach to targets presented at similar distances as in the pretest, in order to assess the carryover effects of calibration on depth perception when compared to the baseline pretest session. The target face, stylus tip, head and eye plane locations were tracked and logged by the experiment simulation, which was pulled from the electromagnetic tracking system during the course of the experiment. The end of the ballistic reaches were then extracted from the raw data using the method described in Section \ref{dataPreprocessing}.
+
+
+\section{Data Preprocessing}\label{dataPreprocessing}
+
+Rapid reaches to targets were characterized by a fast ballistic phase and then a much smaller and slower corrective phase. Past work has shown that the most accurate way to measure near field perceptual-motor target depth judgments is via rapid reaches and to use the end point of fast ballistic phase \cite{BP98,BR99,PB98,PGJ01,PI08}. To be able to extract the end of the ballistic reaches, we used following methods:
+
+\begin{enumerate}
+	\item The target face, stylus tip, head and eye plane locations were tracked and logged by the experiment simulation, which was pulled from the electromagnetic tracking system during the course of the experiment. Using an after action review visualizer, the participants' actions were replayed from the log file data, and the experimenter coded the approximate location of the ballistic reach in the visualizer. In this manner the visualizer was used to code the end of the ballistic reaches for each trial from each participant's data log. Figure \ref{fig:VisualizerA} shows a screen shot of the visualizer.
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[width=4in]{Study1-ACMSAP2014/images/VisualizerA}
+		\caption{A screen shot of the visualizer that was used to tag the approximate location of the end of the ballistic reach. In this image, the coordinate system attached to the stylus, target, and user's eye centered point also can be seen.}
+		\label{fig:VisualizerA}
+	\end{figure}
+	\item We extracted the end of the ballistic reach by analyzing the XY position trajectories and speed profile associated with the physical reach motions. To do so, the end of the forward trajectory (motion toward the target) was tagged as a baseline for the end of the ballistic reach. Then, all the tagged data points from XY trajectories were embedded in the speed profile to be used to pick the end of the ballistic reaches. Figure \ref{fig:dataPreprocessing}-Left is an example of an XY trajectory. The blue line represents the forward motion (reach phase) and the red line represents the backward motions (retraction phase) of the stylus, as the participant reached to make a perceptual judgment. The black square is the tagged data point denoting the end of the ballistic reach. The speed (XYZ) and the velocity in all 3 dimensions (X, Y and Z) of the tracked stylus for each trial were also plotted in a separate window. The speed profile was rendered as a blue line. Figure \ref{fig:dataPreprocessing}-Right shows a full view of the speed and velocity profiles for a single trial. The time instance at the end of the ballistic reach, extracted from the previous step, was also denoted in these plots as a magenta line. This line provided an estimate based on the XY trajectory graph as to the location of the end of the ballistic reach, and was then visually confirmed by examining the speed and velocity profiles generated in this step. The end of the ballistic reach was chosen by the experimenter examining the speed profile as the first time instance when the speed reaches a local minima below a threshold of 20 cm/s, immediately after attaining peak speed caused by the forward motion of the stylus. After tagging the speed profile, the data from all the other sensors were automatically extracted based on the temporal information gathered from the previous step in coding the end of the ballistic reach. 
+	
+\end{enumerate}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[trim = 10mm 5mm 5mm 0mm, width=5.8in]{Study3-ACMTAP2016/Images-PDF-format/dataPreprocessing}
+	\caption{\textbf{Left}: An example of XY trajectory for a single trial. The black square is the tagged data point denoting the end of the ballistic reach. \textbf{Right}: An example of speed and velocity profiles (solid blue line). The magenta line denotes the time instance at the end of the ballistic reach which was initially extracted from XY trajectory.}
+	\label{fig:dataPreprocessing}
+\end{figure}
+
+
+% results from second paper and then results from the first paper
+\section{Results}
+%3DUI 2015
+\subsection{Comparing Pretest and Posttest}
+The average slopes and intercepts of the functions predicting indicated target distance from actual target distance in the pretest and posttest sessions for the Minus, Neutral and Plus conditions are presented in Table \ref{Table1}. Our analyses will proceed in two steps: first, we will test for calibration to determine if the participants' performance improved as a function of the feedback received during the calibration session. This will be evidenced by an increase in $r^2$ and a change in slope and intercept when comparing the pretest and posttest regressions presented in Table \ref{Table1}. Given that perfect performance would be $r^2$ = 1.0, slope = 1.0, and intercept = 0, an improvement in performance would be given by a significant increase in $r^2$, slope values moving closer to 1.0, and intercept values moving closer to 0. Second, we will test for a different effect of calibration as a function of the calibration condition (Minus, Neutral and Plus). This will be evidenced by comparing the slopes and intercepts of the regressions between Table \ref{Table1}, thus comparing the different calibration conditions to each other.
+
+
+Examination of Table \ref{Table1} reveals that across all three conditions, the $r^2$ values tended to be higher in the posttest session compared to the pretest session. A paired t-test using the combined $r^2$ values from all three conditions confirmed that this increase was statistically significant, indicating that the intervening calibration session tended to cause the participants' reaches to become more strongly based on the target distances; t (34) = -7.2, $p < .0001$. The slopes of the simple regressions tended to increase in the posttest session compared to the pretest session, moving more closely to 1.0, and the intercepts decreased, moving more closely to 0. Paired t-tests using the combined $r^2$ values from all three conditions confirmed that this increase was statistically significant; t (34) = -5.8, $p < .0001$, for the slopes, and t (34) = 7.3, $p < .0001$, for the intercepts. In short, the results revealed an increase in the $r^2$ values and improvements in both slope and intercept, indicating a calibration effect that is characterized by an improved scaling of the reaches to the actual target distances.
+
+Next, multiple regression techniques were used to determine if the slopes and intercepts differed between the pretest and posttest sessions within each of the calibration conditions. Multiple regression analyses are preferable to ANOVAs and t-tests because they allow us to predict a continuous dependent variable (indicated target distances) from both a continuous independent variable (actual target distances) and a categorical variable (session) along with the interaction of these two variables (e.g.,~\cite{BP98,PB98,PGJ01,PI08}). Also, the slopes and intercepts given by regression techniques are more useful than other descriptive statistics such as session means and signed error because they describe the function that takes us from the actual target distances to the perceived target distances. For these multiple regressions, and for those reported later to compare the different calibration conditions to each other, we omitted from the analysis the data from any session where and individual participant failed to produce a statistically significant $r^2$ ($p > .05$), which consisted of $r^2$ values of .14 and below. Thus the pretest data was not used for 6 participants, and the posttest data was not used for 1 participant. At this stage of the analysis we wished to compare performance where participants were reaching with a minimal level of proficiency. Note that when the $r^2$ is not statistically significant, the slope and intercept values become meaningless. Thus these non-significant participant sessions were not included in the average values presented in Table \ref{Table1}. Also, data from Participant 3 was not included in the data analysis due to technical difficulties.
+
+
+\begin{table*}[h]
+	\centering
+	\caption{Average $R^2$, Slopes, and Intercepts of Simple Regressions Predicting Reach Distance from Actual Distance (cm) for Each Participant in the Minus, Neutral and Plus conditions (*Intercept)}\vspace{1em}\label{Table1}
+	\begin{tabular}{|l|c|c|c|c|c|c|}
+		\hline
+		\multicolumn{1}{|l|}{} & \multicolumn{3}{c|}{\textbf{Pretest}}             & \multicolumn{3}{c|}{\textbf{Posttest}}            \\ \hline
+		\multicolumn{1}{|l|}{} & \textbf{r2} & \textbf{Slope} & \textbf{Intp.*} & \textbf{r2} & \textbf{Slope} & \textbf{Intp.*} \\ \hline
+		\textbf{Minus}         & 0.53        & 0.47           & 29                 & 0.72        & 0.65           & 19.1               \\ \hline
+		\textbf{Neutral}       & 0.46        & 0.49           & 25.4               & 0.68        & 0.67           & 12.8               \\ \hline
+		\textbf{Plus}          & 0.54        & 0.53           & 25.2               & 0.68        & 0.65           & 12.4               \\ \hline
+	\end{tabular}
+\end{table*}
+
+
+\subsubsection{Minus Condition}
+Overall, the $r^2$ for the regressions predicting the reached distances from the actual distances were .53 and .72 for pretest and posttest sessions, respectively, the slopes were .44 and .65, and the intercepts were 30.7 and 19.1 (cm). Figure~\ref{fig:Cond}.a depicts the relation between actual target distance and the distances reported via reaches for the pretest and posttest sessions. Each point in Figure~\ref{fig:Cond}.a represents reach estimation made by an individual subject to a given target distance. A multiple regression confirmed that the reaches made in the pretest were different from the reaches made in the posttest. To test for differences between the slopes and intercepts of the two different viewing sessions, this multiple regression was performed using the actual target distances and viewing session (coded orthogonally) to predict the reach distances. The multiple regression was first performed with an actual target distance X session interaction term, yielding an $r^2$ = .59 (n = 685), with a partial F of 885.6 for actual target distance ($p < .0001$). The partial F for the session was 9.9 ($p = .002$) and the interaction term was 4.1 ($p < .05$), with the partial F for the session increasing to 56.8 ($p < .0001$) after the removal of the interaction term.
+
+\begin{figure*}[ht]
+	\centering
+	\includegraphics[trim=12mm 118mm 20mm 12mm,clip,width=6.1in]{Study2-3DUI2015/images/Cond1}
+	\vspace{-1em}
+	\caption{Reaches as a function of actual target distances in the pretest and posttest sessions for (a) Minus condition, (b) Neural condition, and (c) Plus condition.}
+	\label{fig:Cond}
+\end{figure*}
+%\begin{figure*}
+% \centering
+% \includegraphics[width=17cm]{image_H/sys}
+% \caption{The time-line of the experiment, showing the steps of the methodology from left to right. DES and PANAS data was collected after every time step in the RRTS (T1 through T4), EDA data was collected throughout, while Co-Presence data was collected at the end of the experiment.}
+% \label{fig:exp_timeline}
+%\end{figure*}
+
+Put simply, the partial F for actual target distance assesses the degree to which the actual target distances predict the variation in the responses after the variation due to the other terms (session and the interaction) had already been accounted for. Thus, the partial F for actual target distance tests for a main effect of actual target distance. The partial F for the session assesses the degree to which the intercepts for the two sessions differ from each other and thus test for a main effect of the session. The partial F for the interaction term assesses the degree to which the slopes for the two sessions differ from each other. Thus, the multiple regression revealed a statistically significant main effect for actual target distance, a main effect for the session, as well as an interaction. Therefore, the slopes of the functions predicting reached distance from actual distance and the intercepts differed for the two sessions.
+
+
+\subsubsection{Neutral Condition}
+
+Overall, the $r^2$ for the regressions predicting the reached distances from the actual distances were .46 and .68 for pretest and posttest sessions, respectively, the slopes were .38 and .61, and the intercepts were 30.5 and 15.4 (cm). Figure~\ref{fig:Cond}.b depicts the relation between actual target distance and the distances reported via reaches for the two sessions. Each point in Figure~\ref{fig:Cond}.b represents reach estimation made by an individual subject to a given target distance. A multiple regression confirmed that the reaches made in the pretest were different from the reaches made in the posttest. To test for differences between the slopes and intercepts of the two different sessions, this multiple regression was performed as the analysis for the plus condition, using the actual target distances and session (coded orthogonally) to predict the reach distances. The multiple regression yielded an $r^2$ = .63 (n = 594), with a partial F of 840.3 for actual target distance ($p < .0001$), with the interaction term included. The partial F for the session was 25.4 ($p < .0001$), and the interaction term 9.8 ($p < .01$), with the partial F for the session increasing to 132.2 ($p < .0001$) after the removal of the interaction term. Thus, the multiple regression revealed a statistically significant main effect for actual target distance, a main effect for the session (reaches made in the pretest vs. reaches made in the posttest), as well as an interaction.
+
+
+\subsubsection{Plus Condition}
+
+Overall, the $r^2$ for the regressions predicting the reached distances from the actual distances were .54 and .68 for pretest and posttest sessions, respectively, the slopes were .45 and .65, and the intercepts were 29.6 and 12.4 (cm). Figure~\ref{fig:Cond}.c depicts the relation between actual target distance and the distances reported via reaches for the two sessions, with each point representing reach estimation made by an individual subject to a given target distance.
+
+A multiple regression confirmed that the reaches made in the pretest were different from the reaches made in the posttest. To test for differences between the slopes and intercepts of the two different sessions, this multiple regression was performed as the analyses for the Minus and Neutral conditions, using the actual target distances and session (coded orthogonally) to predict the reach distances. The multiple regression yielded an $r^2$ = .51 (n = 599), with a partial F of 422.5 for actual target distance ($p < .0001$), with the interaction term included. The partial F for the session was 24.8 ($p < .0001$), although the interaction term was not significant ($p > .05$), with the partial F for the session increasing to 314 ($p < .0001$) after the removal of the interaction term. Thus, the multiple regression revealed a statistically significant main effect for actual target distance, a main effect for the session (reaches made in the pretest vs. reaches made in the posttest), although no interaction.
+
+In sum, reaches improved after calibration in all 3 conditions. For the multiple regressions the $r^2$ for the Plus and Neutral conditions increased, the intercept lowered to become closer to zero, and the slope increased to become closer to 1. For the Plus condition the $r^2$ increased and the intercept lowered to become closer to zero. The slope increased in the Plus condition to become closer to 1, but this failed to reach statistical significance. The multiple regressions, however, were a very conservative test of the hypothesis because they only assessed the improvement of performance after the worst performing participant sessions were removed from the data set. The fact that 6 participant sessions were removed from the pretest for lack of significant simple regressions while only 1 was removed from the posttest is itself a measure of improved performance. The purpose of the multiple regressions was to separately compare the changes in the average slopes and intercepts for each calibration condition presented in Table \ref{Table1}, which only include the statistically significant simple regressions.
+The t-tests, however, included all of the participant data, and thus they compare the 36 individual slopes, intercepts and $r^2$ values, combining the data from the three calibration conditions. The t-tests for all three of these variables confirmed an increase in the $r^2$ values and improvements in both slope and intercept, indicating calibration, which is characterized by an improved scaling of the reaches to the actual target distances.
+
+Our findings suggest that participants generally overestimated distances when reaching to the perceived location of the target without visual guidance. The tendency towards overestimation of reached distance observed in this study is consistent with a similar pattern observed by Rolland et al. [1995] in AR. However, others have reported underestimation when performing similar tasks [Altenhoff et al. 2012; Singh et al. 2010; Napieralski et al. 2011]. The explanation for these diverse results is still unclear and necessitates future research.
+
+
+\subsection{Comparing Calibration Conditions (Pretest)}
+Next, the three conditions within each of the two sessions were compared (see Figure~\ref{fig:Pre}). In the pretest the slopes of the functions predicting indicated target distance from actual target distance were .47, .49, and .53 for the Minus, Neutral, and Plus conditions, respectively. The intercepts were 29.0, 25.4, and 25.2 (cm), respectively. Multiple regression analyses were conducted for each pairing of conditions (Plus \& Minus, Plus \& Neutral, and Neutral \& Minus).
+
+\begin{figure*}[ht]
+	\centering
+	\includegraphics[trim=26mm 115mm 40mm 20mm,clip,width=6.1in]{Study2-3DUI2015/images/2CondsComparePre}
+	\vspace{-1em}
+	\caption{Reach estimates in (a) Minus and Neutral conditions, (b) Neutral and Plus conditions and (c) Minus and Plus conditions as a function of the actual target distances for the pretest.}
+	\label{fig:Pre}
+\end{figure*}
+
+\subsubsection{Minus and Neutral Conditions}
+A multiple regression predicting the judgments from actual target distance and condition was first performed with an actual target distance X session interaction term, yielding an $r^2$ = .522 (n = 592), with partial F of 612.7 for actual target distance ($p < .0001$), and non-significant partial F for condition and the interaction term ($p > .05$), with the partial F for condition increasing to 59.5. ($p < .0001$) after the removal of the interaction term. Overall, as the actual distances increased, reaches increased at the same rate in the Minus and Neutral conditions, although intercepts differed. A simple regression predicting indicated target distance from actual target distance resulted in an $r^2$ = 0.471 (n = 593), indicating that the difference between estimates in the pretests of these conditions accounted for 4.8\% of the variance in the responses while actual target distance accounted for 47.1\%.
+
+\subsubsection{Neutral and Plus Conditions}
+A multiple regression predicting the judgments from actual target distance and condition was first performed with an actual target distance X session interaction term, yielding an $r^2$ = .522 (n = 536), with the partial Fs of 574.6 for actual target distance ($p < .0001$), 8.7 for condition ($p < .01$), and 16.0 for the interaction ($p < .0001$). Overall, as the actual distances increased, reaches increased faster in Plus condition than Neutral condition. A simple regression predicting indicated target distance from actual target distance resulted in an $r^2$ = 0.474 (n = 537), indicating that the difference between estimates in the pretests of these conditions accounted for only 3.4\% of the variance in the responses, while actual target distance accounted for 47.4\%.
+
+
+\subsubsection{Minus and Plus Conditions}
+A multiple regression predicting the judgments from actual target distance and condition was first performed with an actual target distance X session interaction term, yielding an $r^2$ = .461 (n = 595), with the partial Fs of 489 for actual target distance ($p < .0001$), 5.4 for condition ($p = .021$) and 4.8 (p = .028) for the interaction term. However, the partial F for Condition fell to 0.9 (p = .343) after the removal of the interaction term. A simple regression predicting indicated target distance from actual target distance resulted in an $r^2$ = 0.456 (n = 595), indicating that the difference between estimates in the pretests of Minus and Plus conditions accounted for only 0.1\% of the variance in the responses. Thus, while differences between the two conditions were statistically significant, the actual amount of variance accounted for by differences in the two conditions was very small.
+
+\subsection{Comparing Calibration Conditions (Posttest)}
+Next, the three conditions within the posttest session were compared (see Figure~\ref{fig:Post}). In the posttests, the slopes of the functions predicting indicated target distance from actual target distance were .65, .67, and .67 for the Minus, Neutral, and Plus conditions, respectively. The intercepts were 19.1, 12.8, and 12.4 (in cm), respectively. Multiple regression analyses were conducted for each pairing of conditions (Plus \& Minus, Plus \& Neutral, and Neutral \& Minus).
+
+\begin{figure*}[ht]
+	\centering
+	\includegraphics[trim=26mm 115mm 40mm 20mm,clip,width=6.1in]{Study2-3DUI2015/images/2CondsComparePost}
+	\vspace{-1em}
+	\caption{Reach estimates in (a) Minus and Neutral conditions, (b) Neutral and Plus conditions and (c) Minus and Plus conditions as a function of the actual target distances for the posttest.}
+	\label{fig:Post}
+\end{figure*}
+
+\subsubsection{Minus and Neutral Conditions}
+A multiple regression predicting the judgments from actual target distance and condition was first performed with an actual target distance X session interaction term, yielding an $r^2$ = .686 (n = 687), with a partial F of 1,266.1 for actual target distance ($p < .0001$) and a non-significant interaction term. With the interaction removed the partial F for condition was 219.8 ($p < .0001$). A simple regression predicting indicated target distance from actual target distance resulted in an $r^2$ = 0.584 (n = 687), indicating that the difference between estimates in the posttests of these conditions accounted for 10.1\% of the variance in the responses, 5.3\% greater than in the pretest condition. Overall, the participants tended to reach farther in the minus condition, where the hand-held stylus appeared closer to the body.
+
+\subsubsection{Neutral and Plus Conditions}
+
+A multiple regression predicting the judgments from actual target distance and condition was first performed with an actual target distance X session interaction term, yielding an $r^2$ = .503 (n = 656), with partial Fs of 642.5 for actual target distance ($p < .0001$), 12.1 for condition ($p < .01$) and 8.5 ($p < .01$) for the interaction term. A simple regression predicting indicated target distance from actual target distance resulted in an $r^2$ = 0.488 (n = 656), indicating that the difference between estimates in the posttests of Neutral and Plus conditions accounted for 1.5\% of the variance in the responses. Thus, while differences between the two conditions reach statistical significance, this accounted for a very small amount of the variance in the reaches, and thus overall, the participants tended to reach to similar distances in the Neutral and Plus conditions.
+
+\subsubsection{Minus and Plus Conditions}
+A multiple regression predicting the judgments from actual target distance and condition was first performed with an actual target distance X session interaction term, yielding an $r^2$ = .611 (n = 689), with partial Fs of 797.2 for actual target distance ($p < .0001$), 40.6 for condition ($p < .0001$) and a non-significant interaction term. A simple regression predicting indicated target distance from actual target distance resulted in an $r^2$ = 0.461 (n = 689), indicating that the difference between estimates in the posttests of Minus and Plus conditions accounted for 14.8\% of the variance in the responses, 14.7\% greater than in the pretest viewing. Overall, the participants tended to reach farther in the Minus condition, where the hand-held stylus appeared closer to the body.
+
+\subsection{Discussion}
+
+Research in human perceptual-motor coupling has shown that the matching of visual, kinesthetic and proprioceptive information is important for calibrating perceptual information so that visuo-motor tasks become and remain accurate. Many state-of-the art IVEs created for training users in near field visuo-motor tasks suffer from perceptual-motor limitations with respect to a de-coupling of visual, kinesthetic and proprioceptive information due to technological issues such as optical distortions, tracking error and drift. Previous studies have shown that distance estimates became more accurate after a period of interaction with the environment, with reaches improving from pretest to posttest (as revealed by improvements in the $r^2$ values as well as changes in both the slopes and intercepts of the regressions)~\cite{ANL+12,BP98,BR99,RW05,RW07}.
+%To the best of our knowledge, our work is one of the first studies to investigate calibration of egocentric distance estimation in IVEs in the near field.
+
+We studied the effects of a visual distortion during a closed-loop physical reach task to near field targets in an IVE. We examined effects of the visual distortion on the calibration of users' reaching behavior. Specifically, we investigated the effects of calibration on egocentric distance perception in an IVE using pretest, calibration and posttest viewing paradigm. Three conditions of visual feedback were examined: scaling of a participant-controlled stylus to appear 20\% closer to the viewer than it was physically located (Minus condition), 20\% farther away from the viewer than it was physically located (Plus condition), and no scaling with the stylus appearing in its actual physical location (Neutral condition). Within each session and for each trial, manual reaches were given by participants to indicate perceived distance. As reaches were manipulated to appear closer, participants believed they were underestimating, and thus they reached farther after feedback. Similarly, reaches became nearer after they were manipulated to appear farther. The tendency towards calibration to perturbation of visual distance observed in this study is consistent with a similar pattern observed by Bourgeois and Coello~\cite{BC12}. While Bourgeois and Coello~\cite{BC12} investigated the effects of feedback on near-field distance estimation in the real world, our contribution shows that in an IVE, participants similarly scale their depth judgments to visual and proprioceptive information during 3D interactions in the near field.
+
+%\vspace{-.117em}
+
+
+%ACM SAP 2014
+\subsection{Constant and Absolute Error}
+
+\subsubsection{Computing Error}
+Accuracy measures were calculated to examine the differences between participants' estimated and actual target position. These were then combined for individual participants in each condition (Minus, Neutral, or Plus). Constant and Absolute Error were calculated based on techniques described by Schmidt ~\cite{SL88}, see formula 1 and 2, where \textit{T} is the target distance of a given trial, $x_i$ is the distance estimate by a participant in a particular trial, and n is the number of trials a participant performed in a session.
+
+Constant error measures the direction of the errors of a participants' responses and the average error magnitude. In essence, this measure indicates the direction and accuracy of each participant. Constant Error was calculated using the following formula to examine average error:
+
+\begin{equation}
+\frac{\sum^{n}_{i=1}(x_i-T)}{n}
+\end{equation}
+
+Data from two participants was not included in the analysis due to technical difficulties.
+
+\subsubsection{Open-Loop vs. Closed-Loop Calibration in Neutral Condition}
+
+As presented in Table \ref{tb:tb1}, Constant Error of reach estimates in the pretest showed that, on average, participants in Neutral condition (no gain condition) reached 3.12cm past the actual target location in the pretest (SD = 2.64), and only 0.03cm in front of the actual target location in the calibration phase (SD = 4.01), indicating that participant reaches were 3.09cm closer to the target after the calibration phase with the stylus appearing at its actual physical location. A paired-samples t-test indicated that this was a significant difference, \textit{t}(10) = 2.238, \textit{p} = 0.05.
+
+Absolute Error of reach estimates showed that on average, participants in Neutral condition were “off” by 5.86cm in the pretest (SD = 1.68), and 4.79cm in the calibration phase (SD = 1.89), also indicating that participants were more accurate after calibration, although this difference was not significant, \textit{t}(10) = 1.588, \textit{p} \textgreater 0.05. On average, participants no longer overestimated to target locations in the calibration phase with the stylus appearing at its actual physical location as they had in the pretest.
+
+\begin{table}[h]
+	\centering
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|}
+			
+			\hline
+			& \multicolumn{2}{|c}{\textbf{Const. Err}} & \multicolumn{2}{|c|}{\textbf{Abs. Err}} \\ \hline
+			\textbf{C2\_PID} & \textbf{P}  & \textbf{Calb}  & \textbf{P}  & \textbf{Calb}  \\ \hline
+			\textbf{8}      & 1.04        & -0.02         & 3.88        & 3.85          \\ \hline
+			\textbf{12}     & 4.91        & 8.7          & 6.15        & 9.31          \\ \hline
+			\textbf{18}     & 1.97        & -4.23         & 3.85        & 4.45          \\ \hline
+			\textbf{22}     & 5.02        & 1.54          & 7.48        & 4.33          \\ \hline
+			\textbf{23}     & 4.97        & -6.85         & 6.37        & 7.28          \\ \hline
+			\textbf{27}     & 3.1         & 0.18          & 8.68        & 4.62          \\ \hline
+			\textbf{24}     & 7.88        & -0.37         & 7.92        & 4.61          \\ \hline
+			\textbf{25}     & -0.35        & 3.35          & 4.07        & 4.57          \\ \hline
+			\textbf{28}     & -1.1        & -1.76         & 5.95        & 3.29          \\ \hline
+			\textbf{33}     & 4.16        & 0.82          & 4.47        & 2.67          \\ \hline
+			\textbf{34}     & 2.72        & -1.69         & 5.69        & 3.72          \\ \hline
+			\textbf{Avg.}   & \textbf{3.12}        & \textbf{-0.03}         & \textbf{5.86}        & \textbf{4.79}          \\ \hline
+		\end{tabular}
+		\caption{Constant Error (Const. Err) and Absolute Error (Abs. Err) of reach estimates (cm) in the pretest (P) and calibration phase (Calb) in Neutral condition (no gain condition) for each participant (C2\_PID).}\label{tb:tb1}
+	\end{center}
+\end{table}
+
+\subsubsection{Minus Condition vs. Plus Condition}
+As presented in Table \ref{tb:tb2}, Constant Error of reach estimates showed that on average, participants reached 3.72cm past the actual target location in the calibration phase of Minus condition (SD = 3.67), and 7.15cm short of the actual target in the calibration phase of Plus condition (SD = 4.22), indicating that participant reaches were 10.87cm farther in the calibration phase of Minus condition than Plus condition, which was significantly different, \textit{t}(20) = 6.437, \textit{p} \textless 0.001.
+
+Absolute Error of reach estimates showed that on average, participants were “off” by 5.61cm in the calibration phase of Minus condition (SD = 1.65), and 7.89cm in the calibration phase of Plus condition (SD = 3.56), also indicating that participants were more accurate in the calibration phase of Minus condition than Plus condition, although this was not significantly different, \textit{t}(20) = -1.927, \textit{p} \textgreater 0.05. Participant reaches in calibration phase of Minus condition were more accurate and significantly farther than those in Plus condition.
+
+\begin{table*}[t]
+	\begin{center}
+			\small
+		\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+			\hline
+			\textbf{}    & \multicolumn{2}{c|}{\textbf{Const. Err}} & \textbf{Abs. Err} & \textbf{} & \textbf{}    & \multicolumn{2}{c|}{\textbf{Const. Err}} & \textbf{Abs. Err} \\ \hline
+			\textbf{M\_PID} & \textbf{M}     & \textbf{M\_PoAL (\%)}   & \textbf{M}       & \textbf{} & \textbf{P\_PID} & \textbf{P}     & \textbf{P\_PoAL (\%)}   & \textbf{P}       \\ \hline
+			\textbf{5}    & 5.4         & 9.65          & 5.56          &      & \textbf{1}    & -9.44        & -18.5         & 9.44          \\ \hline
+			\textbf{7}    & -5.03        & -9           & 5.65          &      & \textbf{6}    & -4.42        & -7.49         & 7.64          \\ \hline
+			\textbf{9}    & 7          & 13.53         & 7.49          &      & \textbf{10}   & -6.11        & -14.12         & 6.23          \\ \hline
+			\textbf{11}   & 5.18        & 9           & 5.33          &      & \textbf{13}   & -11.3        & -20.73         & 11.3          \\ \hline
+			\textbf{14}   & 6.48        & 13.94         & 6.81          &      & \textbf{17}   & -5.43        & -11.31         & 5.45          \\ \hline
+			\textbf{15}   & 6.51        & 14           & 7.2           &      & \textbf{20}   & -4.91        & -9.26         & 5.19          \\ \hline
+			\textbf{16}   & 6.03        & 11.06         & 6.61          &      & \textbf{26}   & -1.42        & -2.42         & 3.05          \\ \hline
+			\textbf{19}   & 3.78        & 7.7          & 5.19          &      & \textbf{29}   & -1.62        & -3.15         & 4.08          \\ \hline
+			\textbf{21}   & -0.03        & -0.05         & 1.99          &      & \textbf{30}   & -14.28       & -25.05         & 14.28          \\ \hline
+			\textbf{31}   & 1.04        & 1.97          & 3.46          &      & \textbf{35}   & -12.15       & -21.14         & 12.15          \\ \hline
+			\textbf{32}   & 4.51        & 8.12          & 6.38          &      & \textbf{36}   & -7.54        & -15.24         & 7.95          \\ \hline
+			\textbf{Avg.}  & \textbf{3.72}    & \textbf{7.27}     & \textbf{5.61}      & \textbf{} & \textbf{Avg.}  & \textbf{-7.15}   & \textbf{-13.49}    & \textbf{7.89}      \\ \hline
+		\end{tabular}
+%	\end{adjustbox}
+		\caption{Constant Error (Const. Err) and Absolute Error (Abs. Err) of reach estimates (cm) in calibration phase Minus condition (M) and Plus condition (P) and the \textit{Proportion of Max Arm Length} (PoAL (\%)) for each participant.}\label{tb:tb2}
+	\end{center}
+\end{table*}
+
+
+\subsection{Rate of Visuo-Motor Calibration on Depth Judgments}
+In this section, we utilized a mixed model analysis of variance (ANOVA) to examine changes in reached distance over the course of the experiment. Since the calibration phase of the experiment consisted of 20 total trials, we subdivided the experiment into 4 groups of 5 trials each. We refer to these groups simply as 5-Trials. The analysis was conducted on reached distance as expressed in terms of percentage of the target distance. This was calculated such that \textit{percent distance = (reached distance / target distance) * 100}. Viewing conditions (Minus, Neutral, and Plus) varied between subjects while 5-Trials varied within subjects. As such, this resulted in analysis with 3 x 4 mixed model ANOVA.
+
+\subsubsection{Overall Stylus Location}
+In this section, data has been analyzed based on two sources of sensory information (i.e. 1. visual sensory information with respect to the virtual location of the stylus 2. kinesthetic sensory information with respect to the physical location of the stylus). Note that the physical and visual stylus locations are basically two sides of the same coin (they are only different by the imposed gain factor). Therefore, temporal analysis can be done based on either the physical or visual stylus location. Thus, the temporal analysis has been conducted using the physical stylus location (significance in one entails significance in the other). However, the statistical analysis on the difference between the means for different conditions (Minus, Neutral, and Plus) have been conducted for both physical and visual stylus location.
+
+As can be seen in Figure \ref{fig:PhysicalStylusC}, in Neutral condition (0\% gain, or gain = 1.0), physically reached distance was typically very close to the target distance, with very little change over the course of the experiment. The overall accuracy and stability of judgments within this condition is not particularly surprising since visual movements very closely matched physical movements. There appeared to be general tendency toward shortened reaches over time but not significantly so (\textit{F}(3, 33) = 1.513, \textit{p} = 0.229).
+
+However, upon examining the scaled movement conditions (Conditions 1 and 3) we find significant changes in physically reached distance. Particularly, in Plus condition (20\% gain, or gain = 1.2), one would expect participants' physical reach to be noticeably shorter than when no gains were applied, because the stylus appears to be farther. This expectation was confirmed in the data with participants reaching significantly shorter (-15.8\%) than in Neutral condition (0\% gain) (\textit{F}(1, 22) = 16.532, \textit{p} = 0.001). Over the course of the experiment, participants significantly shortened their reached distance (\textit{F}(3, 33) = 2.881, \textit{p} = 0.051). This pattern is qualitatively similar to that seen in Neutral condition.
+
+When examining Minus condition (-20\% gain, or gain = 0.8), we would expect to see physical reaches that are longer than those expressed when no gains were applied, because the stylus appears closer. When comparing Minus and Neutral onditions, we see that this is, in fact, the case. Participants in Minus condition reached significantly further (11.5\%) than their Neutral condition counterparts (\textit{F}(1, 22) = 7.864, \textit{p} = 0.010). There was no significant change in physically reached distance over the course of the experiment (\textit{F}(3, 33) = 0.666, \textit{p} = 0.579). However, the magnitude of the scaled reaches in this condition was slightly less than that seen in the Plus condition. Neither of the physical reach conditions, however, exactly reached the gain factor applied to the visual reach.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[trim = 5mm 20mm 10mm 20mm, clip, width=5in]{Study1-ACMSAP2014/images/figure7h}
+	%  \resizebox{4in}{!}{\includegraphics{images/PhysicalStylusC}}
+	\caption{Physical and visual stylus location for all closed-loop conditions (C1 (Minus) = 0.8, C2 (Neutral) = 1.0, C3 (Plus) = 1.2)}
+	\label{fig:PhysicalStylusC}
+\end{figure}
+
+If we examine, instead, the visual distance of the reach as it appeared in the VE, we would expect performance in the scaled conditions (Minus and Plus conditions) to very closely match that of the unscaled condition (Neutral condition). Figure \ref{fig:PhysicalStylusC} summarizes these results. When comparing Conditions 2 and 3, we find that they did not significantly differ (0.1\%) in visually reached distance (\textit{F}(1, 22) = 0.000, \textit{p} = 0.999). However, when comparing Minus condition to Neutral condition, that participants in the scaled condition very consistently under reached (-9.2\%) relative to their no gain counterparts (\textit{F}(1, 22) = 6.709, \textit{p} = 0.017).
+
+\subsection{Discussion}
+\subsubsection{Comparing Open-Loop vs. Closed-Loop Distances Judgments}
+We compared constant and absolute error of the perceived distances to targets between the open-loop blind reaching and the closed-loop physical reaching to targets with visuo-motor calibration (section 4.2.2). The closed-loop phase provided participants with visual feedback that was co-located with the physical location of the tracked stylus (Neutral condition), and thus visual and proprioceptive information matched and reinforced the stylus location to the participant during visually guided reaching. Our results indicate that the primary mechanism by which recalibration occurred was visual feedback as the visual position of the stylus strongly influenced the end position of the participants' ballistic reach. Our findings suggest that participants generally over estimated distances to the targets by 3.12 cm, when reaching to the perceived location of the target without visual guidance. The tendency towards overestimation of reached distance observed in this study is consistent with a similar pattern observed by Rolland et. al ~\cite{RBG+95} in the AR. However, others have reported underestimation when performing similar tasks ~\cite{ANL+12,SSJ+10,NAB+11}. The explanation for these diverse results is still unclear and necessitates future research.
+
+During the closed-loop visuo-motor calibration trials in Neutral condition, participants received accurate visual and proprioceptive feedback regarding the targets through the precise rendering of visual information of the actual stylus position and the change in stylus tip color when the tip of the stylus was placed within a 1cm diameter groove on the target face. Mean absolute error in perceptual judgments to the targets also decreased from 5.86cm in the open-loop session to 4.79cm in the closed-loop session (Neutral condition), showing an improvement in absolute error of 1.07cm on average. The mean constant error of physical reach responses of participants in the closed-loop session (Neutral condition), where participants reached with visual guidance, decreased to -0.03cm as compared to 3.12cm in the open-loop session, revealing an improvement of 3.09cm on average. This is similar to Altenhoff et. al. ~\cite{ANL+12}, in which we found that closed-loop visuo-motor calibration with visual and haptic (tactile) feedback improved near field distance judgments by 4.27cm as compared to a pre-calibration open-loop baseline. However, our findings suggest that accurate visual feedback alone to the location of the effector (hand/stylus), during closed-loop interactions where users received constant visuo-motor calibration via visual and proprioceptive information, appears as effective as the addition of the kinesthetic and tactile information ~\cite{ANL+12} in calibrating physical reach responses to targets in near field IVE simulations.
+
+\subsubsection{Rate of Visuo-Motor Calibration on Distance Judgments in Closed-Loop Perturbations}
+
+In section 4.3, we performed a statistical analysis to compare the change in percent actual distance reached by the physical/virtual stylus (section 4.3.1) over four sets of trials (each set consisting of 5 trials), during the closed-loop session in which participants received visuo-motor calibration via visual and proprioceptive information (Minus, Neutral and Plus Conditions). In Neutral condition (0\% gain), we found that there were no significant changes in participants' physical reach responses over the course of the experiment. However, participants did show a slight over estimation in the initial trials, and the physical reach responses tended to calibrate towards 100\% of the actual distance. Whereas in Minus condition (-20\% gain) participants' physical reach responses showed an over estimation to favor the proprioceptive information in the first five trials, but participants tended to scale their responses down towards the visual information. In this case, they showed an overall overestimation of physical reach of 11.5\% of the actual distance (or 7.25\% of the mean maximum arms reach), 3.72cm mean constant error and 5.61cm mean absolute error (section 4.2.3). In Plus condition (+20\% gain) participants' physical reach responses showed less of an immediate underestimation in the first five trials (perhaps favoring the visual information, contrary to Minus condition), but the underestimation tended to increase over the course of the session biasing the physical reach response towards the physical location of the hand/stylus (favoring the proprioceptive information). Participants in Plus condition showed an overall underestimation of -15.8\% of the actual distance (or -13.5\% of their mean maximum arms reach), -7.15cm mean constant error and 7.89cm mean absolute error (section 4.2.3).
+
+In an empirical evaluation, we showed that participants' depth judgments are scaled to be more accurate in the presence of visual and proprioceptive information during closed-loop near field activities in the IVE, as compared to absolute depth judgments in an open-loop session, when measured via physical reaching. These findings are important, as most VR simulations lack tactile haptic feedback systems for training in dexterous manual tasks such as surgical simulation, welding and painting applications. It seems that the use of visual information to reinforce the location of physical effectors such as the hand or stylus appears sufficient in improving depth judgments. However, we have also shown that depth perception can be altered drastically when visual and proprioceptive information, even in closed-loop conditions, are no longer congruent in the IVE. Thus they may cause significant distortions in our spatial perception, and potentially degrade training outcomes, experience and performance in VR simulations.
+
+\section{Conclusion}
+While the present results further our understanding of perceptual calibration in general, they also have important implications for the design of virtual reality applications. The results from this experiment support the notion that users of virtual environments adapt their behavior to adjust to visual feedback that conflicts with their physical movements. This is a particularly interesting finding, as it implies that users will likely be able to reasonably adapt to virtual reality systems that may not have tightly corresponding visual and physical movements. This demonstrates that people can likely to somewhat adapt to exaggerated virtual spaces, enabling the design of virtual instrumentation and interfaces that deviate from realistic simulations of the real world. This is of considerable interest to developers of interaction devices for virtual reality systems, in that it implies that a tight coupling between the virtual and physical self is not completely necessary, since the user will likely adapt to small incongruities with little or no notice. When this is taken in conjunction with the reaching behavior seen in the current posttest, we do see that observer's reaches are affected by the mismatched visual and proprioceptive feedback.
+
+
+
+\section{Future Work}
+%In future work, we plan to empirically evaluate the effects of visual and proprioceptive information mismatch on post-calibration open-loop perceptual judgments, in order to investigate any lasting carry over effects from the perturbations in the IVE. We also plan to examine if the effects of visual and proprioceptive scaling during visuo-motor calibration transfers from the virtual world to the real world. This research direction has profound implications with respect to the success of the transfer of psychomotor skills learned in visuo-motor activities in VR simulations to real world tasks.
+
+Future work should further examine the effect of feedback on the calibration of distance estimates in both IVEs and the real world. We plan to test if calibration of distance estimates in near space carry over to subsequent perception in peripersonal space (beyond maximum arms reach) in IVE. Future research also should examine differences between visual and haptic feedback to see if one is more effective at calibrating distance estimates compared to the other, and to see if there is a benefit to including of both visual and haptic feedback simultaneously.
+
+%Additionally, future work should further investigate what types of visual distortions can be corrected via calibrations and which cannot, as this has implications for both the design of IVEs and for understanding ordinary perception in the real world. It is much more critical for designers to correct distortions or perturbations in IVEs that cannot be improved by calibration than to correct those that are easily remedied by users via a brief session of calibration. Specifically, designers of complex virtual systems may use research showing a compression of depth perception in IVEs to enhance performance by automatically accounting for such systematic underestimations, but these efforts are less necessary if users can instead produce more accurate distance estimates after calibration. In most cases, calibration via feedback can be achieved by simply allowing the individual to briefly interact with the environment, be it real or virtual. For example, if a user is given an opportunity to practice operating in the IVE before performing actual tasks, visual and/or haptic feedback could calibrate the visuo-motor system to the new environment.
+
+%Given that many tasks, in both laboratory experiments and in real word applications, involve verbal reports, it will be important to understand the extent to which verbal reports can be calibrated, and whether a different type of feedback is necessary for the calibration of verbal reports. Many researchers find verbal responses inappropriate for examining absolute distance estimates. It is important to note that many matching procedures or similar manual activities that require conscious deliberation appear to follow the same pattern of results as verbal reports. Verbal estimates and similar "cognitive" or "analytical"~\cite{H93} response measures appear to be less accurate and more variable than rapid actions, even if they involve a manual activity, and thus we chose to employ rapid egocentric reaches. A virtual environment must support all of the responses that will be executed within it by supporting the calibration processes underlying each response type.
+
+
+%\bibliography{Reference}
